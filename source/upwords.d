@@ -164,7 +164,8 @@ auto doReferance(ref Up[] ups, in string reference, in string text = "") {
 	//#not sure on this
 	//ups = remove!"a.txt.getLocalBounds().width < a.fontHeight"(ups);
 	if (text == "")
-		ups = ups.remove!((a) => a.txt.getLocalBounds().width < 1); //(ups);
+		//ups = 
+		ups.remove!(a => a.txt.getLocalBounds().width < 1); //(ups);
 	debug(5) mixin(trace("/* after */ ups.length"));
 
 	return 0;

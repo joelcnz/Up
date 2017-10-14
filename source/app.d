@@ -37,7 +37,10 @@ struct BackBoard {
 	bool _power;
 	RectangleShape _backBoard;
 }
-BackBoard backBoard = {/* _power */ false};
+
+immutable noPower = false;
+
+BackBoard backBoard = {noPower}; //{/* _power */ false};
 
 int main(string[] args) {
 	g_checkPoints = false;
