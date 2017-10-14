@@ -1,0 +1,16 @@
+.dub
+up
+.DS_Store
+*.lst
+dub.selections.json
+dub.userprefs
+esv.xml
+oversettings.ini
+settingfiles
+messages
+other
+pictures
+docs
+fonts
+audio
+backPictures

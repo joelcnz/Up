@@ -1,0 +1,1638 @@
+Tuesday 28 March 2017 [6:18.14pm] -h
+Tuesday 28 March 2017 [6:18.14pm] 
+Tuesday 28 March 2017 [6:18.14pm] Help:
+Tuesday 28 March 2017 [6:18.14pm] -h/-help
+Tuesday 28 March 2017 [6:18.14pm] -h2/help2
+Tuesday 28 March 2017 [6:18.14pm] -q/-quit/-exit - exit program
+Tuesday 28 March 2017 [6:18.14pm] <ref> - bring up verse(s)
+Tuesday 28 March 2017 [6:18.14pm] -cls - clear screen
+Tuesday 28 March 2017 [6:18.14pm] -stop
+Tuesday 28 March 2017 [6:18.14pm] -go
+Tuesday 28 March 2017 [6:18.14pm] -pictures - list pictures
+Tuesday 28 March 2017 [6:18.14pm] -picture <picture name>
+Tuesday 28 March 2017 [6:18.14pm] -backPictures
+Tuesday 28 March 2017 [6:18.14pm] -backPicture #
+Tuesday 28 March 2017 [6:18.14pm] -reference - add a Bible reference
+Tuesday 28 March 2017 [6:18.14pm] -references - view verse refs list
+Tuesday 28 March 2017 [6:18.14pm] -info - information
+Tuesday 28 March 2017 [6:18.14pm] -fonts - list fonts
+Tuesday 28 March 2017 [6:18.14pm] -font <font name>
+Tuesday 28 March 2017 [6:18.14pm] -fontSize #
+Tuesday 28 March 2017 [6:18.14pm] -wrapSize #
+Tuesday 28 March 2017 [6:18.14pm] -pictureUpStepSize #
+Tuesday 28 March 2017 [6:18.14pm] -textUpStepSize #
+Tuesday 28 March 2017 [6:18.14pm] -fps <frames per second>
+Tuesday 28 March 2017 [6:18.14pm] -colour <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:18.14pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Tuesday 28 March 2017 [6:18.14pm] -backColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:18.14pm] -inputColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:18.14pm] -adds - list of notes
+Tuesday 28 March 2017 [6:18.14pm] -add <line of text>
+Tuesday 28 March 2017 [6:18.14pm] -addsList - list notes (for subtract)
+Tuesday 28 March 2017 [6:18.14pm] -subtract # - remove from add list (to do)
+Tuesday 28 March 2017 [6:18.14pm] -messages - list messages
+Tuesday 28 March 2017 [6:18.14pm] -message # - load a message (not working!)
+Tuesday 28 March 2017 [6:18.14pm] -messageUp - show message
+Tuesday 28 March 2017 [6:18.14pm] -m/-misc - testing stuff
+Tuesday 28 March 2017 [6:18.14pm] -show - slide show
+Tuesday 28 March 2017 [6:18.14pm] -pictureLots - list picture folders
+Tuesday 28 March 2017 [6:18.14pm] -pictureLot #
+Tuesday 28 March 2017 [6:18.14pm] * - not in yet
+Tuesday 28 March 2017 [6:18.30pm] -pictureLots
+Tuesday 28 March 2017 [6:18.30pm] 
+Tuesday 28 March 2017 [6:18.30pm] Up pictures lots list: (to do)
+Tuesday 28 March 2017 [6:18.30pm] 0) odds
+Tuesday 28 March 2017 [6:18.30pm] 1) pth
+Tuesday 28 March 2017 [6:18.30pm] 2) wipe
+Tuesday 28 March 2017 [6:27.16pm] -show
+Tuesday 28 March 2017 [6:27.23pm] -h
+Tuesday 28 March 2017 [6:27.23pm] 
+Tuesday 28 March 2017 [6:27.23pm] Help:
+Tuesday 28 March 2017 [6:27.24pm] -h/-help
+Tuesday 28 March 2017 [6:27.24pm] -h2/help2
+Tuesday 28 March 2017 [6:27.24pm] -q/-quit/-exit - exit program
+Tuesday 28 March 2017 [6:27.24pm] <ref> - bring up verse(s)
+Tuesday 28 March 2017 [6:27.24pm] -cls - clear screen
+Tuesday 28 March 2017 [6:27.24pm] -stop
+Tuesday 28 March 2017 [6:27.24pm] -go
+Tuesday 28 March 2017 [6:27.24pm] -pictures - list pictures
+Tuesday 28 March 2017 [6:27.24pm] -picture <picture name>
+Tuesday 28 March 2017 [6:27.24pm] -backPictures
+Tuesday 28 March 2017 [6:27.24pm] -backPicture #
+Tuesday 28 March 2017 [6:27.24pm] -reference - add a Bible reference
+Tuesday 28 March 2017 [6:27.24pm] -references - view verse refs list
+Tuesday 28 March 2017 [6:27.24pm] -info - information
+Tuesday 28 March 2017 [6:27.24pm] -fonts - list fonts
+Tuesday 28 March 2017 [6:27.24pm] -font <font name>
+Tuesday 28 March 2017 [6:27.24pm] -fontSize #
+Tuesday 28 March 2017 [6:27.24pm] -wrapSize #
+Tuesday 28 March 2017 [6:27.24pm] -pictureUpStepSize #
+Tuesday 28 March 2017 [6:27.24pm] -textUpStepSize #
+Tuesday 28 March 2017 [6:27.24pm] -fps <frames per second>
+Tuesday 28 March 2017 [6:27.24pm] -colour <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:27.24pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Tuesday 28 March 2017 [6:27.24pm] -backColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:27.24pm] -inputColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:27.24pm] -adds - list of notes
+Tuesday 28 March 2017 [6:27.24pm] -add <line of text>
+Tuesday 28 March 2017 [6:27.24pm] -addsList - list notes (for subtract)
+Tuesday 28 March 2017 [6:27.24pm] -subtract # - remove from add list (to do)
+Tuesday 28 March 2017 [6:27.24pm] -messages - list messages
+Tuesday 28 March 2017 [6:27.24pm] -message # - load a message (not working!)
+Tuesday 28 March 2017 [6:27.24pm] -messageUp - show message
+Tuesday 28 March 2017 [6:27.24pm] -m/-misc - testing stuff
+Tuesday 28 March 2017 [6:27.24pm] -show - slide show
+Tuesday 28 March 2017 [6:27.24pm] -pictureLots - list picture folders
+Tuesday 28 March 2017 [6:27.24pm] -pictureLot #
+Tuesday 28 March 2017 [6:27.24pm] * - not in yet
+Tuesday 28 March 2017 [6:27.32pm] -picturesLots
+Tuesday 28 March 2017 [6:27.38pm] -pictureLots
+Tuesday 28 March 2017 [6:27.38pm] 
+Tuesday 28 March 2017 [6:27.38pm] Up pictures lots list: (to do)
+Tuesday 28 March 2017 [6:27.38pm] 0) odds
+Tuesday 28 March 2017 [6:27.38pm] 1) pth
+Tuesday 28 March 2017 [6:27.38pm] 2) wipe
+Tuesday 28 March 2017 [6:27.44pm] -picturesLot 2
+Tuesday 28 March 2017 [6:27.46pm] cls
+Tuesday 28 March 2017 [6:27.48pm] clear
+Tuesday 28 March 2017 [6:27.53pm] -cls
+Tuesday 28 March 2017 [6:27.58pm] -show
+Tuesday 28 March 2017 [6:28.14pm] -picturesLot 2
+Tuesday 28 March 2017 [6:28.17pm] -h
+Tuesday 28 March 2017 [6:28.17pm] 
+Tuesday 28 March 2017 [6:28.17pm] Help:
+Tuesday 28 March 2017 [6:28.17pm] -h/-help
+Tuesday 28 March 2017 [6:28.17pm] -h2/help2
+Tuesday 28 March 2017 [6:28.17pm] -q/-quit/-exit - exit program
+Tuesday 28 March 2017 [6:28.17pm] <ref> - bring up verse(s)
+Tuesday 28 March 2017 [6:28.17pm] -cls - clear screen
+Tuesday 28 March 2017 [6:28.17pm] -stop
+Tuesday 28 March 2017 [6:28.17pm] -go
+Tuesday 28 March 2017 [6:28.17pm] -pictures - list pictures
+Tuesday 28 March 2017 [6:28.17pm] -picture <picture name>
+Tuesday 28 March 2017 [6:28.17pm] -backPictures
+Tuesday 28 March 2017 [6:28.17pm] -backPicture #
+Tuesday 28 March 2017 [6:28.17pm] -reference - add a Bible reference
+Tuesday 28 March 2017 [6:28.17pm] -references - view verse refs list
+Tuesday 28 March 2017 [6:28.17pm] -info - information
+Tuesday 28 March 2017 [6:28.17pm] -fonts - list fonts
+Tuesday 28 March 2017 [6:28.17pm] -font <font name>
+Tuesday 28 March 2017 [6:28.17pm] -fontSize #
+Tuesday 28 March 2017 [6:28.17pm] -wrapSize #
+Tuesday 28 March 2017 [6:28.17pm] -pictureUpStepSize #
+Tuesday 28 March 2017 [6:28.17pm] -textUpStepSize #
+Tuesday 28 March 2017 [6:28.17pm] -fps <frames per second>
+Tuesday 28 March 2017 [6:28.17pm] -colour <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:28.17pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Tuesday 28 March 2017 [6:28.17pm] -backColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:28.17pm] -inputColour  <red> <green> <blue> (0 - 100 each)
+Tuesday 28 March 2017 [6:28.17pm] -adds - list of notes
+Tuesday 28 March 2017 [6:28.17pm] -add <line of text>
+Tuesday 28 March 2017 [6:28.17pm] -addsList - list notes (for subtract)
+Tuesday 28 March 2017 [6:28.17pm] -subtract # - remove from add list (to do)
+Tuesday 28 March 2017 [6:28.17pm] -messages - list messages
+Tuesday 28 March 2017 [6:28.17pm] -message # - load a message (not working!)
+Tuesday 28 March 2017 [6:28.17pm] -messageUp - show message
+Tuesday 28 March 2017 [6:28.17pm] -m/-misc - testing stuff
+Tuesday 28 March 2017 [6:28.17pm] -show - slide show
+Tuesday 28 March 2017 [6:28.17pm] -pictureLots - list picture folders
+Tuesday 28 March 2017 [6:28.17pm] -pictureLot #
+Tuesday 28 March 2017 [6:28.17pm] * - not in yet
+Tuesday 28 March 2017 [6:28.26pm] -pictureLot 2
+Tuesday 28 March 2017 [6:28.26pm] wipe selected
+Tuesday 28 March 2017 [6:28.26pm] bunny
+Tuesday 28 March 2017 [6:28.27pm] patternstain
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.27pm] Screen Shot 2017-03-28 at 6
+Tuesday 28 March 2017 [6:28.30pm] -cls
+Tuesday 28 March 2017 [6:28.32pm] -show
+Tuesday 28 March 2017 [6:31.39pm] -q
+Thursday 30 March 2017 [1:55.44pm] -h
+Thursday 30 March 2017 [1:55.44pm] 
+Thursday 30 March 2017 [1:55.44pm] Help:
+Thursday 30 March 2017 [1:55.44pm] -h/-help
+Thursday 30 March 2017 [1:55.44pm] -h2/help2
+Thursday 30 March 2017 [1:55.44pm] -q/-quit/-exit - exit program
+Thursday 30 March 2017 [1:55.44pm] <ref> - bring up verse(s)
+Thursday 30 March 2017 [1:55.44pm] -cls - clear screen
+Thursday 30 March 2017 [1:55.44pm] -stop
+Thursday 30 March 2017 [1:55.44pm] -go
+Thursday 30 March 2017 [1:55.44pm] -pictures - list pictures
+Thursday 30 March 2017 [1:55.44pm] -picture <picture name>
+Thursday 30 March 2017 [1:55.44pm] -backPictures
+Thursday 30 March 2017 [1:55.44pm] -backPicture #
+Thursday 30 March 2017 [1:55.44pm] -reference - add a Bible reference
+Thursday 30 March 2017 [1:55.44pm] -references - view verse refs list
+Thursday 30 March 2017 [1:55.44pm] -info - information
+Thursday 30 March 2017 [1:55.44pm] -fonts - list fonts
+Thursday 30 March 2017 [1:55.44pm] -font <font name>
+Thursday 30 March 2017 [1:55.44pm] -fontSize #
+Thursday 30 March 2017 [1:55.44pm] -wrapSize #
+Thursday 30 March 2017 [1:55.44pm] -pictureUpStepSize #
+Thursday 30 March 2017 [1:55.44pm] -textUpStepSize #
+Thursday 30 March 2017 [1:55.44pm] -fps <frames per second>
+Thursday 30 March 2017 [1:55.44pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [1:55.44pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 30 March 2017 [1:55.44pm] -backColour  <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [1:55.44pm] -inputColour  <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [1:55.44pm] -adds - list of notes
+Thursday 30 March 2017 [1:55.44pm] -add <line of text>
+Thursday 30 March 2017 [1:55.44pm] -addsList - list notes (for subtract)
+Thursday 30 March 2017 [1:55.44pm] -subtract # - remove from add list (to do)
+Thursday 30 March 2017 [1:55.44pm] -messages - list messages
+Thursday 30 March 2017 [1:55.44pm] -message # - load a message (not working!)
+Thursday 30 March 2017 [1:55.44pm] -messageUp - show message
+Thursday 30 March 2017 [1:55.44pm] -m/-misc - testing stuff
+Thursday 30 March 2017 [1:55.44pm] -show - slide show
+Thursday 30 March 2017 [1:55.44pm] -pictureLots - list picture folders
+Thursday 30 March 2017 [1:55.44pm] -pictureLot #
+Thursday 30 March 2017 [1:55.44pm] * - not in yet
+Thursday 30 March 2017 [1:56.05pm] -pictureLots
+Thursday 30 March 2017 [1:56.05pm] 
+Thursday 30 March 2017 [1:56.05pm] Up pictures lots list: (to do)
+Thursday 30 March 2017 [1:56.05pm] 0) odds
+Thursday 30 March 2017 [1:56.05pm] 1) pth
+Thursday 30 March 2017 [1:56.05pm] 2) wipe
+Thursday 30 March 2017 [1:56.11pm] -pictureLot 0
+Thursday 30 March 2017 [1:56.11pm] odds selected
+Thursday 30 March 2017 [1:56.11pm] alanfam
+Thursday 30 March 2017 [1:56.11pm] beehive
+Thursday 30 March 2017 [1:56.11pm] bunny
+Thursday 30 March 2017 [1:56.11pm] castle
+Thursday 30 March 2017 [1:56.11pm] cecilyvine
+Thursday 30 March 2017 [1:56.11pm] joel
+Thursday 30 March 2017 [1:56.11pm] owl
+Thursday 30 March 2017 [1:56.11pm] pie
+Thursday 30 March 2017 [1:56.11pm] riankids
+Thursday 30 March 2017 [1:56.17pm] -q
+Thursday 30 March 2017 [1:56.54pm] -q
+Thursday 30 March 2017 [2:31.37pm] -h
+Thursday 30 March 2017 [2:31.37pm] 
+Thursday 30 March 2017 [2:31.37pm] Help:
+Thursday 30 March 2017 [2:31.37pm] -h/-help
+Thursday 30 March 2017 [2:31.37pm] -h2/help2
+Thursday 30 March 2017 [2:31.37pm] -q/-quit/-exit - exit program
+Thursday 30 March 2017 [2:31.37pm] <ref> - bring up verse(s)
+Thursday 30 March 2017 [2:31.37pm] -cls - clear screen
+Thursday 30 March 2017 [2:31.37pm] -stop
+Thursday 30 March 2017 [2:31.37pm] -go
+Thursday 30 March 2017 [2:31.37pm] -pictures - list pictures
+Thursday 30 March 2017 [2:31.37pm] -picture <picture name>
+Thursday 30 March 2017 [2:31.37pm] -backPictures
+Thursday 30 March 2017 [2:31.37pm] -backPicture #
+Thursday 30 March 2017 [2:31.37pm] -reference - add a Bible reference
+Thursday 30 March 2017 [2:31.37pm] -references - view verse refs list
+Thursday 30 March 2017 [2:31.37pm] -info - information
+Thursday 30 March 2017 [2:31.37pm] -fonts - list fonts
+Thursday 30 March 2017 [2:31.37pm] -font <font name>
+Thursday 30 March 2017 [2:31.37pm] -fontSize #
+Thursday 30 March 2017 [2:31.37pm] -wrapSize #
+Thursday 30 March 2017 [2:31.37pm] -pictureUpStepSize #
+Thursday 30 March 2017 [2:31.37pm] -textUpStepSize #
+Thursday 30 March 2017 [2:31.37pm] -fps <frames per second>
+Thursday 30 March 2017 [2:31.37pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [2:31.37pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 30 March 2017 [2:31.37pm] -backColour  <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [2:31.37pm] -inputColour  <red> <green> <blue> (0 - 100 each)
+Thursday 30 March 2017 [2:31.37pm] -adds - list of notes
+Thursday 30 March 2017 [2:31.37pm] -add <line of text>
+Thursday 30 March 2017 [2:31.37pm] -addsList - list notes (for subtract)
+Thursday 30 March 2017 [2:31.37pm] -subtract # - remove from add list (to do)
+Thursday 30 March 2017 [2:31.37pm] -messages - list messages
+Thursday 30 March 2017 [2:31.37pm] -message # - load a message (not working!)
+Thursday 30 March 2017 [2:31.37pm] -messageUp - show message
+Thursday 30 March 2017 [2:31.37pm] -m/-misc - testing stuff
+Thursday 30 March 2017 [2:31.37pm] -show - slide show
+Thursday 30 March 2017 [2:31.37pm] -pictureLots - list picture folders
+Thursday 30 March 2017 [2:31.37pm] -pictureLot #
+Thursday 30 March 2017 [2:31.37pm] * - not in yet
+Thursday 30 March 2017 [2:32.05pm] -backPictures
+Thursday 30 March 2017 [2:32.05pm] 
+Thursday 30 March 2017 [2:32.05pm] Back ground pictures list:
+Thursday 30 March 2017 [2:32.05pm] 0) barry1.png
+Thursday 30 March 2017 [2:32.05pm] 1) blank.png
+Thursday 30 March 2017 [2:32.05pm] 2) centre.png
+Thursday 30 March 2017 [2:32.05pm] 3) roundfishcircle.png
+Thursday 30 March 2017 [2:32.05pm] 4) wallpaper.png
+Thursday 30 March 2017 [2:32.11pm] -backPicture 3
+Thursday 30 March 2017 [2:32.11pm] 
+Thursday 30 March 2017 [2:32.26pm] Matt 5 13
+Thursday 30 March 2017 [2:32.48pm] -stop
+Thursday 30 March 2017 [2:33.05pm] -cls
+Thursday 6 April 2017 [7:35.47pm] -show
+Thursday 6 April 2017 [7:37.45pm] -stop
+Thursday 25 May 2017 [2:18:36pm] -h
+Thursday 25 May 2017 [2:18:36pm] 
+Thursday 25 May 2017 [2:18:36pm] Help:
+Thursday 25 May 2017 [2:18:36pm] -h/-help
+Thursday 25 May 2017 [2:18:36pm] -h2/help2
+Thursday 25 May 2017 [2:18:36pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:18:36pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:18:36pm] -cls - clear screen
+Thursday 25 May 2017 [2:18:36pm] -stop
+Thursday 25 May 2017 [2:18:36pm] -go
+Thursday 25 May 2017 [2:18:36pm] -pictures - list pictures
+Thursday 25 May 2017 [2:18:36pm] -picture <picture name>
+Thursday 25 May 2017 [2:18:36pm] -backPictures
+Thursday 25 May 2017 [2:18:36pm] -backPicture #
+Thursday 25 May 2017 [2:18:36pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:18:36pm] -references - view verse refs list
+Thursday 25 May 2017 [2:18:36pm] -info - information
+Thursday 25 May 2017 [2:18:36pm] -fonts - list fonts
+Thursday 25 May 2017 [2:18:36pm] -font <font name>
+Thursday 25 May 2017 [2:18:36pm] -fontSize #
+Thursday 25 May 2017 [2:18:36pm] -wrapSize #
+Thursday 25 May 2017 [2:18:36pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:18:36pm] -textUpStepSize #
+Thursday 25 May 2017 [2:18:36pm] -fps <frames per second>
+Thursday 25 May 2017 [2:18:36pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:18:36pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:18:36pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:18:36pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:18:36pm] -adds - list of notes
+Thursday 25 May 2017 [2:18:36pm] -add <line of text>
+Thursday 25 May 2017 [2:18:36pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:18:36pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:18:36pm] -messages - list messages
+Thursday 25 May 2017 [2:18:36pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:18:36pm] -messageUp - show message
+Thursday 25 May 2017 [2:18:36pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:18:36pm] -show - slide show
+Thursday 25 May 2017 [2:18:36pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:18:36pm] -pictureLot #
+Thursday 25 May 2017 [2:18:36pm] * - not in yet
+Thursday 25 May 2017 [2:18:48pm] -cls
+Thursday 25 May 2017 [2:18:51pm] -show
+Thursday 25 May 2017 [2:19:42pm] -stop
+Thursday 25 May 2017 [2:20:09pm] -h
+Thursday 25 May 2017 [2:20:09pm] 
+Thursday 25 May 2017 [2:20:09pm] Help:
+Thursday 25 May 2017 [2:20:09pm] -h/-help
+Thursday 25 May 2017 [2:20:09pm] -h2/help2
+Thursday 25 May 2017 [2:20:09pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:20:09pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:20:09pm] -cls - clear screen
+Thursday 25 May 2017 [2:20:09pm] -stop
+Thursday 25 May 2017 [2:20:09pm] -go
+Thursday 25 May 2017 [2:20:09pm] -pictures - list pictures
+Thursday 25 May 2017 [2:20:09pm] -picture <picture name>
+Thursday 25 May 2017 [2:20:09pm] -backPictures
+Thursday 25 May 2017 [2:20:09pm] -backPicture #
+Thursday 25 May 2017 [2:20:09pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:20:09pm] -references - view verse refs list
+Thursday 25 May 2017 [2:20:09pm] -info - information
+Thursday 25 May 2017 [2:20:09pm] -fonts - list fonts
+Thursday 25 May 2017 [2:20:09pm] -font <font name>
+Thursday 25 May 2017 [2:20:09pm] -fontSize #
+Thursday 25 May 2017 [2:20:09pm] -wrapSize #
+Thursday 25 May 2017 [2:20:09pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:20:09pm] -textUpStepSize #
+Thursday 25 May 2017 [2:20:09pm] -fps <frames per second>
+Thursday 25 May 2017 [2:20:09pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:20:09pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:20:09pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:20:09pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:20:09pm] -adds - list of notes
+Thursday 25 May 2017 [2:20:09pm] -add <line of text>
+Thursday 25 May 2017 [2:20:09pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:20:09pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:20:09pm] -messages - list messages
+Thursday 25 May 2017 [2:20:09pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:20:09pm] -messageUp - show message
+Thursday 25 May 2017 [2:20:09pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:20:09pm] -show - slide show
+Thursday 25 May 2017 [2:20:09pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:20:09pm] -pictureLot #
+Thursday 25 May 2017 [2:20:09pm] * - not in yet
+Thursday 25 May 2017 [2:20:13pm] -go
+Thursday 25 May 2017 [2:20:15pm] -cl
+Thursday 25 May 2017 [2:20:17pm] -cls
+Thursday 25 May 2017 [2:20:20pm] -how
+Thursday 25 May 2017 [2:20:22pm] -show
+Thursday 25 May 2017 [2:22:52pm] Eph 2 8 - 9
+Thursday 25 May 2017 [2:23:02pm] -stop
+Thursday 25 May 2017 [2:23:07pm] -go
+Thursday 25 May 2017 [2:23:24pm] -h
+Thursday 25 May 2017 [2:23:24pm] 
+Thursday 25 May 2017 [2:23:24pm] Help:
+Thursday 25 May 2017 [2:23:24pm] -h/-help
+Thursday 25 May 2017 [2:23:24pm] -h2/help2
+Thursday 25 May 2017 [2:23:24pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:23:24pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:23:24pm] -cls - clear screen
+Thursday 25 May 2017 [2:23:24pm] -stop
+Thursday 25 May 2017 [2:23:24pm] -go
+Thursday 25 May 2017 [2:23:24pm] -pictures - list pictures
+Thursday 25 May 2017 [2:23:24pm] -picture <picture name>
+Thursday 25 May 2017 [2:23:24pm] -backPictures
+Thursday 25 May 2017 [2:23:24pm] -backPicture #
+Thursday 25 May 2017 [2:23:24pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:23:24pm] -references - view verse refs list
+Thursday 25 May 2017 [2:23:24pm] -info - information
+Thursday 25 May 2017 [2:23:24pm] -fonts - list fonts
+Thursday 25 May 2017 [2:23:24pm] -font <font name>
+Thursday 25 May 2017 [2:23:24pm] -fontSize #
+Thursday 25 May 2017 [2:23:24pm] -wrapSize #
+Thursday 25 May 2017 [2:23:24pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:23:24pm] -textUpStepSize #
+Thursday 25 May 2017 [2:23:24pm] -fps <frames per second>
+Thursday 25 May 2017 [2:23:24pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:23:24pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:23:24pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:23:24pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:23:24pm] -adds - list of notes
+Thursday 25 May 2017 [2:23:24pm] -add <line of text>
+Thursday 25 May 2017 [2:23:24pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:23:24pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:23:24pm] -messages - list messages
+Thursday 25 May 2017 [2:23:24pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:23:24pm] -messageUp - show message
+Thursday 25 May 2017 [2:23:24pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:23:24pm] -show - slide show
+Thursday 25 May 2017 [2:23:24pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:23:24pm] -pictureLot #
+Thursday 25 May 2017 [2:23:24pm] * - not in yet
+Thursday 25 May 2017 [2:25:24pm] -colour 100 0 100
+Thursday 25 May 2017 [2:25:35pm] Joh 3 16
+Thursday 25 May 2017 [2:25:49pm] -stop
+Thursday 25 May 2017 [2:26:20pm] -pictureLots
+Thursday 25 May 2017 [2:26:20pm] 
+Thursday 25 May 2017 [2:26:20pm] Up pictures lots list: (to do)
+Thursday 25 May 2017 [2:26:20pm] 0) odds
+Thursday 25 May 2017 [2:26:20pm] 1) pth
+Thursday 25 May 2017 [2:26:25pm] -pictureLots 1
+Thursday 25 May 2017 [2:26:25pm] 
+Thursday 25 May 2017 [2:26:25pm] Up pictures lots list: (to do)
+Thursday 25 May 2017 [2:26:25pm] 0) odds
+Thursday 25 May 2017 [2:26:25pm] 1) pth
+Thursday 25 May 2017 [2:26:35pm] -cls
+Thursday 25 May 2017 [2:26:38pm] -h
+Thursday 25 May 2017 [2:26:38pm] 
+Thursday 25 May 2017 [2:26:38pm] Help:
+Thursday 25 May 2017 [2:26:38pm] -h/-help
+Thursday 25 May 2017 [2:26:38pm] -h2/help2
+Thursday 25 May 2017 [2:26:38pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:26:38pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:26:38pm] -cls - clear screen
+Thursday 25 May 2017 [2:26:38pm] -stop
+Thursday 25 May 2017 [2:26:38pm] -go
+Thursday 25 May 2017 [2:26:38pm] -pictures - list pictures
+Thursday 25 May 2017 [2:26:38pm] -picture <picture name>
+Thursday 25 May 2017 [2:26:38pm] -backPictures
+Thursday 25 May 2017 [2:26:38pm] -backPicture #
+Thursday 25 May 2017 [2:26:38pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:26:38pm] -references - view verse refs list
+Thursday 25 May 2017 [2:26:38pm] -info - information
+Thursday 25 May 2017 [2:26:38pm] -fonts - list fonts
+Thursday 25 May 2017 [2:26:38pm] -font <font name>
+Thursday 25 May 2017 [2:26:38pm] -fontSize #
+Thursday 25 May 2017 [2:26:38pm] -wrapSize #
+Thursday 25 May 2017 [2:26:38pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:26:38pm] -textUpStepSize #
+Thursday 25 May 2017 [2:26:38pm] -fps <frames per second>
+Thursday 25 May 2017 [2:26:38pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:26:38pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:26:38pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:26:38pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:26:38pm] -adds - list of notes
+Thursday 25 May 2017 [2:26:38pm] -add <line of text>
+Thursday 25 May 2017 [2:26:38pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:26:38pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:26:38pm] -messages - list messages
+Thursday 25 May 2017 [2:26:38pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:26:38pm] -messageUp - show message
+Thursday 25 May 2017 [2:26:38pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:26:38pm] -show - slide show
+Thursday 25 May 2017 [2:26:38pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:26:38pm] -pictureLot #
+Thursday 25 May 2017 [2:26:38pm] * - not in yet
+Thursday 25 May 2017 [2:27:29pm] -h2
+Thursday 25 May 2017 [2:27:29pm] 
+Thursday 25 May 2017 [2:27:29pm] Help 2:
+Thursday 25 May 2017 [2:27:29pm] -h/-help
+Thursday 25 May 2017 [2:27:29pm] -backBoard/-b - toggle on and off
+Thursday 25 May 2017 [2:27:29pm] l, - mouse click for history
+Thursday 25 May 2017 [2:28:14pm] -pictureUpStepSize 4
+Thursday 25 May 2017 [2:28:14pm] Picture up step size set to: 4
+Thursday 25 May 2017 [2:28:20pm] -show
+Thursday 25 May 2017 [2:29:07pm] -cls
+Thursday 25 May 2017 [2:29:08pm] -h
+Thursday 25 May 2017 [2:29:08pm] 
+Thursday 25 May 2017 [2:29:08pm] Help:
+Thursday 25 May 2017 [2:29:08pm] -h/-help
+Thursday 25 May 2017 [2:29:08pm] -h2/help2
+Thursday 25 May 2017 [2:29:08pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:29:08pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:29:08pm] -cls - clear screen
+Thursday 25 May 2017 [2:29:08pm] -stop
+Thursday 25 May 2017 [2:29:08pm] -go
+Thursday 25 May 2017 [2:29:08pm] -pictures - list pictures
+Thursday 25 May 2017 [2:29:08pm] -picture <picture name>
+Thursday 25 May 2017 [2:29:08pm] -backPictures
+Thursday 25 May 2017 [2:29:08pm] -backPicture #
+Thursday 25 May 2017 [2:29:08pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:29:08pm] -references - view verse refs list
+Thursday 25 May 2017 [2:29:08pm] -info - information
+Thursday 25 May 2017 [2:29:08pm] -fonts - list fonts
+Thursday 25 May 2017 [2:29:08pm] -font <font name>
+Thursday 25 May 2017 [2:29:08pm] -fontSize #
+Thursday 25 May 2017 [2:29:08pm] -wrapSize #
+Thursday 25 May 2017 [2:29:08pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:29:08pm] -textUpStepSize #
+Thursday 25 May 2017 [2:29:08pm] -fps <frames per second>
+Thursday 25 May 2017 [2:29:08pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:29:08pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:29:08pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:29:08pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:29:08pm] -adds - list of notes
+Thursday 25 May 2017 [2:29:08pm] -add <line of text>
+Thursday 25 May 2017 [2:29:08pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:29:08pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:29:08pm] -messages - list messages
+Thursday 25 May 2017 [2:29:08pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:29:08pm] -messageUp - show message
+Thursday 25 May 2017 [2:29:08pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:29:08pm] -show - slide show
+Thursday 25 May 2017 [2:29:08pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:29:08pm] -pictureLot #
+Thursday 25 May 2017 [2:29:08pm] * - not in yet
+Thursday 25 May 2017 [2:29:22pm] -pictures 
+Thursday 25 May 2017 [2:29:22pm] 
+Thursday 25 May 2017 [2:29:22pm] List of picture names:
+Thursday 25 May 2017 [2:29:22pm] 0) alanfam
+Thursday 25 May 2017 [2:29:22pm] 1) beehive
+Thursday 25 May 2017 [2:29:22pm] 2) bunny
+Thursday 25 May 2017 [2:29:22pm] 3) castle
+Thursday 25 May 2017 [2:29:22pm] 4) cecilyvine
+Thursday 25 May 2017 [2:29:22pm] 5) joel
+Thursday 25 May 2017 [2:29:22pm] 6) owl
+Thursday 25 May 2017 [2:29:22pm] 7) pie
+Thursday 25 May 2017 [2:29:22pm] 8) riankids
+Thursday 25 May 2017 [2:29:22pm] 
+Thursday 25 May 2017 [2:29:33pm] -pictureUpStepSize 4
+Thursday 25 May 2017 [2:29:33pm] Picture up step size set to: 4
+Thursday 25 May 2017 [2:29:35pm] -show
+Thursday 25 May 2017 [2:29:39pm] -go
+Thursday 25 May 2017 [2:30:40pm] -h2
+Thursday 25 May 2017 [2:30:40pm] 
+Thursday 25 May 2017 [2:30:40pm] Help 2:
+Thursday 25 May 2017 [2:30:40pm] -h/-help
+Thursday 25 May 2017 [2:30:40pm] -backBoard/-b - toggle on and off
+Thursday 25 May 2017 [2:30:40pm] l, - mouse click for history
+Thursday 25 May 2017 [2:31:05pm] -pictureLots 
+Thursday 25 May 2017 [2:31:05pm] 
+Thursday 25 May 2017 [2:31:05pm] Up pictures lots list: (to do)
+Thursday 25 May 2017 [2:31:05pm] 0) odds
+Thursday 25 May 2017 [2:31:05pm] 1) pth
+Thursday 25 May 2017 [2:31:07pm] -pictureLots 1
+Thursday 25 May 2017 [2:31:07pm] 
+Thursday 25 May 2017 [2:31:07pm] Up pictures lots list: (to do)
+Thursday 25 May 2017 [2:31:07pm] 0) odds
+Thursday 25 May 2017 [2:31:07pm] 1) pth
+Thursday 25 May 2017 [2:31:16pm] -pictureLots 1
+Thursday 25 May 2017 [2:31:16pm] 
+Thursday 25 May 2017 [2:31:16pm] Up pictures lots list: (to do)
+Thursday 25 May 2017 [2:31:16pm] 0) odds
+Thursday 25 May 2017 [2:31:16pm] 1) pth
+Thursday 25 May 2017 [2:31:20pm] -pictureLot 1
+Thursday 25 May 2017 [2:31:20pm] pth selected
+Thursday 25 May 2017 [2:31:20pm] aroundtoit
+Thursday 25 May 2017 [2:31:20pm] barry1
+Thursday 25 May 2017 [2:31:21pm] barry2
+Thursday 25 May 2017 [2:31:21pm] bekind
+Thursday 25 May 2017 [2:31:21pm] bird
+Thursday 25 May 2017 [2:31:21pm] bookmark
+Thursday 25 May 2017 [2:31:21pm] bouque
+Thursday 25 May 2017 [2:31:21pm] bunny
+Thursday 25 May 2017 [2:31:21pm] butterfly
+Thursday 25 May 2017 [2:31:21pm] butterfly2
+Thursday 25 May 2017 [2:31:21pm] butterflys
+Thursday 25 May 2017 [2:31:21pm] castle
+Thursday 25 May 2017 [2:31:21pm] castlebarry
+Thursday 25 May 2017 [2:31:22pm] duel
+Thursday 25 May 2017 [2:31:22pm] flowers
+Thursday 25 May 2017 [2:31:22pm] glue
+Thursday 25 May 2017 [2:31:22pm] glue2
+Thursday 25 May 2017 [2:31:22pm] goldfinch
+Thursday 25 May 2017 [2:31:22pm] greatful
+Thursday 25 May 2017 [2:31:22pm] jdragon
+Thursday 25 May 2017 [2:31:22pm] joy
+Thursday 25 May 2017 [2:31:22pm] kakapo
+Thursday 25 May 2017 [2:31:22pm] kdragon
+Thursday 25 May 2017 [2:31:23pm] kea
+Thursday 25 May 2017 [2:31:23pm] kiwi
+Thursday 25 May 2017 [2:31:23pm] oct
+Thursday 25 May 2017 [2:31:23pm] outer
+Thursday 25 May 2017 [2:31:23pm] pth
+Thursday 25 May 2017 [2:31:23pm] quad
+Thursday 25 May 2017 [2:31:23pm] round
+Thursday 25 May 2017 [2:31:23pm] round2
+Thursday 25 May 2017 [2:31:23pm] roundfish2
+Thursday 25 May 2017 [2:31:23pm] seacastle
+Thursday 25 May 2017 [2:31:23pm] showup
+Thursday 25 May 2017 [2:31:24pm] stainglasspattern
+Thursday 25 May 2017 [2:31:24pm] swallows
+Thursday 25 May 2017 [2:31:24pm] tuatara
+Thursday 25 May 2017 [2:31:24pm] tui
+Thursday 25 May 2017 [2:31:24pm] tui2
+Thursday 25 May 2017 [2:31:24pm] wallpaper
+Thursday 25 May 2017 [2:31:38pm] -cls
+Thursday 25 May 2017 [2:31:56pm] -h
+Thursday 25 May 2017 [2:31:56pm] 
+Thursday 25 May 2017 [2:31:56pm] Help:
+Thursday 25 May 2017 [2:31:56pm] -h/-help
+Thursday 25 May 2017 [2:31:56pm] -h2/help2
+Thursday 25 May 2017 [2:31:56pm] -q/-quit/-exit - exit program
+Thursday 25 May 2017 [2:31:56pm] <ref> - bring up verse(s)
+Thursday 25 May 2017 [2:31:56pm] -cls - clear screen
+Thursday 25 May 2017 [2:31:56pm] -stop
+Thursday 25 May 2017 [2:31:56pm] -go
+Thursday 25 May 2017 [2:31:56pm] -pictures - list pictures
+Thursday 25 May 2017 [2:31:56pm] -picture <picture name>
+Thursday 25 May 2017 [2:31:56pm] -backPictures
+Thursday 25 May 2017 [2:31:56pm] -backPicture #
+Thursday 25 May 2017 [2:31:56pm] -reference - add a Bible reference
+Thursday 25 May 2017 [2:31:56pm] -references - view verse refs list
+Thursday 25 May 2017 [2:31:56pm] -info - information
+Thursday 25 May 2017 [2:31:56pm] -fonts - list fonts
+Thursday 25 May 2017 [2:31:56pm] -font <font name>
+Thursday 25 May 2017 [2:31:56pm] -fontSize #
+Thursday 25 May 2017 [2:31:56pm] -wrapSize #
+Thursday 25 May 2017 [2:31:56pm] -pictureUpStepSize #
+Thursday 25 May 2017 [2:31:56pm] -textUpStepSize #
+Thursday 25 May 2017 [2:31:56pm] -fps <frames per second>
+Thursday 25 May 2017 [2:31:56pm] -colour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:31:56pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Thursday 25 May 2017 [2:31:56pm] -backColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:31:56pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Thursday 25 May 2017 [2:31:56pm] -adds - list of notes
+Thursday 25 May 2017 [2:31:56pm] -add <line of text>
+Thursday 25 May 2017 [2:31:56pm] -addsList - list notes (for subtract)
+Thursday 25 May 2017 [2:31:56pm] -subtract # - remove from add list (to do)
+Thursday 25 May 2017 [2:31:56pm] -messages - list messages
+Thursday 25 May 2017 [2:31:56pm] -message # - load a message (not working!)
+Thursday 25 May 2017 [2:31:56pm] -messageUp - show message
+Thursday 25 May 2017 [2:31:56pm] -m/-misc - testing stuff
+Thursday 25 May 2017 [2:31:56pm] -show - slide show
+Thursday 25 May 2017 [2:31:56pm] -pictureLots - list picture folders
+Thursday 25 May 2017 [2:31:56pm] -pictureLot #
+Thursday 25 May 2017 [2:31:56pm] * - not in yet
+Thursday 25 May 2017 [2:32:01pm] -h2
+Thursday 25 May 2017 [2:32:01pm] 
+Thursday 25 May 2017 [2:32:01pm] Help 2:
+Thursday 25 May 2017 [2:32:01pm] -h/-help
+Thursday 25 May 2017 [2:32:01pm] -backBoard/-b - toggle on and off
+Thursday 25 May 2017 [2:32:01pm] l, - mouse click for history
+Thursday 25 May 2017 [2:33:22pm] -backPictures 
+Thursday 25 May 2017 [2:33:22pm] 
+Thursday 25 May 2017 [2:33:22pm] Back ground pictures list:
+Thursday 25 May 2017 [2:33:22pm] 0) barry1.png
+Thursday 25 May 2017 [2:33:22pm] 1) blank.png
+Thursday 25 May 2017 [2:33:22pm] 2) centre.png
+Thursday 25 May 2017 [2:33:22pm] 3) roundfishcircle.png
+Thursday 25 May 2017 [2:33:22pm] 4) wallpaper.png
+Thursday 25 May 2017 [2:33:45pm] -backPicture 2
+Thursday 25 May 2017 [2:33:45pm] 
+Thursday 25 May 2017 [2:33:58pm] Psa 32 8
+Thursday 25 May 2017 [2:34:00pm] -go
+Thursday 25 May 2017 [2:34:12pm] -colour 100 60 0
+Thursday 25 May 2017 [2:34:15pm] Psa 32 8
+Thursday 25 May 2017 [2:34:33pm] -stop
+Thursday 25 May 2017 [2:34:37pm] Psa 32 8
+Thursday 25 May 2017 [2:34:40pm] -go
+Thursday 25 May 2017 [2:34:47pm] -cls
+Thursday 25 May 2017 [2:34:50pm] Psa 32 8
+Thursday 25 May 2017 [2:34:59pm] -stop
+Wednesday 28 June 2017 [5:49:36pm] -h
+Wednesday 28 June 2017 [5:49:36pm] 
+Wednesday 28 June 2017 [5:49:36pm] Help:
+Wednesday 28 June 2017 [5:49:36pm] -h/-help
+Wednesday 28 June 2017 [5:49:36pm] -h2/help2
+Wednesday 28 June 2017 [5:49:36pm] -q/-quit/-exit - exit program
+Wednesday 28 June 2017 [5:49:36pm] <ref> - bring up verse(s)
+Wednesday 28 June 2017 [5:49:36pm] -cls - clear screen
+Wednesday 28 June 2017 [5:49:36pm] -stop
+Wednesday 28 June 2017 [5:49:36pm] -go
+Wednesday 28 June 2017 [5:49:36pm] -pictures - list pictures
+Wednesday 28 June 2017 [5:49:36pm] -picture <picture name>
+Wednesday 28 June 2017 [5:49:36pm] -backPictures
+Wednesday 28 June 2017 [5:49:36pm] -backPicture #
+Wednesday 28 June 2017 [5:49:36pm] -reference - add a Bible reference
+Wednesday 28 June 2017 [5:49:36pm] -references - view verse refs list
+Wednesday 28 June 2017 [5:49:36pm] -info - information
+Wednesday 28 June 2017 [5:49:36pm] -fonts - list fonts
+Wednesday 28 June 2017 [5:49:36pm] -font <font name>
+Wednesday 28 June 2017 [5:49:36pm] -fontSize #
+Wednesday 28 June 2017 [5:49:36pm] -wrapSize #
+Wednesday 28 June 2017 [5:49:36pm] -pictureUpStepSize #
+Wednesday 28 June 2017 [5:49:36pm] -textUpStepSize #
+Wednesday 28 June 2017 [5:49:36pm] -fps <frames per second>
+Wednesday 28 June 2017 [5:49:36pm] -colour <red> <green> <blue> (0 - 100 each)
+Wednesday 28 June 2017 [5:49:36pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Wednesday 28 June 2017 [5:49:36pm] -backColour <red> <green> <blue> (0 - 100 each)
+Wednesday 28 June 2017 [5:49:36pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Wednesday 28 June 2017 [5:49:36pm] -adds - list of notes
+Wednesday 28 June 2017 [5:49:36pm] -add <line of text>
+Wednesday 28 June 2017 [5:49:36pm] -addsList - list notes (for subtract)
+Wednesday 28 June 2017 [5:49:36pm] -subtract # - remove from add list (to do)
+Wednesday 28 June 2017 [5:49:36pm] -messages - list messages
+Wednesday 28 June 2017 [5:49:36pm] -message # - load a message (not working!)
+Wednesday 28 June 2017 [5:49:36pm] -messageUp - show message
+Wednesday 28 June 2017 [5:49:36pm] -m/-misc - testing stuff
+Wednesday 28 June 2017 [5:49:36pm] -show - slide show
+Wednesday 28 June 2017 [5:49:36pm] -pictureLots - list picture folders
+Wednesday 28 June 2017 [5:49:36pm] -pictureLot #
+Wednesday 28 June 2017 [5:49:36pm] * - not in yet
+Wednesday 28 June 2017 [5:49:52pm] -h2
+Wednesday 28 June 2017 [5:49:52pm] 
+Wednesday 28 June 2017 [5:49:52pm] Help 2:
+Wednesday 28 June 2017 [5:49:52pm] -h/-help
+Wednesday 28 June 2017 [5:49:52pm] -backBoard/-b - toggle on and off
+Wednesday 28 June 2017 [5:49:52pm] l, - mouse click for history
+Wednesday 28 June 2017 [5:50:13pm] -backPictures
+Wednesday 28 June 2017 [5:50:13pm] 
+Wednesday 28 June 2017 [5:50:13pm] Back ground pictures list:
+Wednesday 28 June 2017 [5:50:13pm] 0) barry1.png
+Wednesday 28 June 2017 [5:50:13pm] 1) blank.png
+Wednesday 28 June 2017 [5:50:13pm] 2) centre.png
+Wednesday 28 June 2017 [5:50:13pm] 3) roundfishcircle.png
+Wednesday 28 June 2017 [5:50:13pm] 4) wallpaper.png
+Wednesday 28 June 2017 [5:50:24pm] -backPicture 2
+Wednesday 28 June 2017 [5:50:24pm] 
+Wednesday 28 June 2017 [5:50:29pm] q
+Wednesday 28 June 2017 [5:50:31pm] -q
+Friday 30 June 2017 [9:31:03am] -q
+Friday 30 June 2017 [2:57:49pm] -pictures
+Friday 30 June 2017 [2:57:49pm] 
+Friday 30 June 2017 [2:57:49pm] List of picture names:
+Friday 30 June 2017 [2:57:49pm] 0) alanfam
+Friday 30 June 2017 [2:57:49pm] 1) beehive
+Friday 30 June 2017 [2:57:49pm] 2) bunny
+Friday 30 June 2017 [2:57:49pm] 3) castle
+Friday 30 June 2017 [2:57:49pm] 4) cecilyvine
+Friday 30 June 2017 [2:57:49pm] 5) joel
+Friday 30 June 2017 [2:57:49pm] 6) owl
+Friday 30 June 2017 [2:57:49pm] 7) pie
+Friday 30 June 2017 [2:57:49pm] 8) riankids
+Friday 30 June 2017 [2:57:49pm] 
+Friday 30 June 2017 [2:57:54pm] -picture 3
+Friday 30 June 2017 [2:57:54pm] castle - picture loaded
+Friday 30 June 2017 [2:57:58pm] -stop
+Friday 30 June 2017 [2:58:05pm] -h
+Friday 30 June 2017 [2:58:05pm] 
+Friday 30 June 2017 [2:58:05pm] Help:
+Friday 30 June 2017 [2:58:05pm] -h/-help
+Friday 30 June 2017 [2:58:05pm] -h2/help2
+Friday 30 June 2017 [2:58:05pm] -q/-quit/-exit - exit program
+Friday 30 June 2017 [2:58:05pm] <ref> - bring up verse(s)
+Friday 30 June 2017 [2:58:05pm] -cls - clear screen
+Friday 30 June 2017 [2:58:05pm] -stop
+Friday 30 June 2017 [2:58:05pm] -go
+Friday 30 June 2017 [2:58:05pm] -pictures - list pictures
+Friday 30 June 2017 [2:58:05pm] -picture <picture name>
+Friday 30 June 2017 [2:58:05pm] -backPictures
+Friday 30 June 2017 [2:58:05pm] -backPicture #
+Friday 30 June 2017 [2:58:05pm] -reference - add a Bible reference
+Friday 30 June 2017 [2:58:05pm] -references - view verse refs list
+Friday 30 June 2017 [2:58:05pm] -info - information
+Friday 30 June 2017 [2:58:05pm] -fonts - list fonts
+Friday 30 June 2017 [2:58:05pm] -font <font name>
+Friday 30 June 2017 [2:58:05pm] -fontSize #
+Friday 30 June 2017 [2:58:05pm] -wrapSize #
+Friday 30 June 2017 [2:58:05pm] -pictureUpStepSize #
+Friday 30 June 2017 [2:58:05pm] -textUpStepSize #
+Friday 30 June 2017 [2:58:05pm] -fps <frames per second>
+Friday 30 June 2017 [2:58:05pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [2:58:05pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 30 June 2017 [2:58:05pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [2:58:05pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [2:58:05pm] -adds - list of notes
+Friday 30 June 2017 [2:58:05pm] -add <line of text>
+Friday 30 June 2017 [2:58:05pm] -addsList - list notes (for subtract)
+Friday 30 June 2017 [2:58:05pm] -subtract # - remove from add list (to do)
+Friday 30 June 2017 [2:58:05pm] -messages - list messages
+Friday 30 June 2017 [2:58:05pm] -message # - load a message (not working!)
+Friday 30 June 2017 [2:58:05pm] -messageUp - show message
+Friday 30 June 2017 [2:58:05pm] -m/-misc - testing stuff
+Friday 30 June 2017 [2:58:05pm] -show - slide show
+Friday 30 June 2017 [2:58:05pm] -pictureLots - list picture folders
+Friday 30 June 2017 [2:58:05pm] -pictureLot #
+Friday 30 June 2017 [2:58:05pm] * - not in yet
+Friday 30 June 2017 [2:58:20pm] -q
+Friday 30 June 2017 [3:13:51pm] -h
+Friday 30 June 2017 [3:13:51pm] 
+Friday 30 June 2017 [3:13:51pm] Help:
+Friday 30 June 2017 [3:13:51pm] -h/-help
+Friday 30 June 2017 [3:13:51pm] -h2/help2
+Friday 30 June 2017 [3:13:51pm] -q/-quit/-exit - exit program
+Friday 30 June 2017 [3:13:51pm] <ref> - bring up verse(s)
+Friday 30 June 2017 [3:13:51pm] -cls - clear screen
+Friday 30 June 2017 [3:13:51pm] -stop
+Friday 30 June 2017 [3:13:51pm] -go
+Friday 30 June 2017 [3:13:51pm] -pictures - list pictures
+Friday 30 June 2017 [3:13:51pm] -picture <picture name>
+Friday 30 June 2017 [3:13:51pm] -backPictures
+Friday 30 June 2017 [3:13:51pm] -backPicture #
+Friday 30 June 2017 [3:13:51pm] -reference - add a Bible reference
+Friday 30 June 2017 [3:13:51pm] -references - view verse refs list
+Friday 30 June 2017 [3:13:51pm] -info - information
+Friday 30 June 2017 [3:13:51pm] -fonts - list fonts
+Friday 30 June 2017 [3:13:51pm] -font <font name>
+Friday 30 June 2017 [3:13:51pm] -fontSize #
+Friday 30 June 2017 [3:13:51pm] -wrapSize #
+Friday 30 June 2017 [3:13:51pm] -pictureUpStepSize #
+Friday 30 June 2017 [3:13:51pm] -textUpStepSize #
+Friday 30 June 2017 [3:13:51pm] -fps <frames per second>
+Friday 30 June 2017 [3:13:51pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:51pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 30 June 2017 [3:13:51pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:51pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:51pm] -adds - list of notes
+Friday 30 June 2017 [3:13:51pm] -add <line of text>
+Friday 30 June 2017 [3:13:51pm] -addsList - list notes (for subtract)
+Friday 30 June 2017 [3:13:51pm] -subtract # - remove from add list (to do)
+Friday 30 June 2017 [3:13:51pm] -messages - list messages
+Friday 30 June 2017 [3:13:51pm] -message # - load a message (not working!)
+Friday 30 June 2017 [3:13:51pm] -messageUp - show message
+Friday 30 June 2017 [3:13:51pm] -m/-misc - testing stuff
+Friday 30 June 2017 [3:13:51pm] -show - slide show
+Friday 30 June 2017 [3:13:51pm] -pictureLots - list picture folders
+Friday 30 June 2017 [3:13:51pm] -pictureLot #
+Friday 30 June 2017 [3:13:51pm] * - not in yet
+Friday 30 June 2017 [3:13:58pm] -h
+Friday 30 June 2017 [3:13:58pm] 
+Friday 30 June 2017 [3:13:58pm] Help:
+Friday 30 June 2017 [3:13:58pm] -h/-help
+Friday 30 June 2017 [3:13:58pm] -h2/help2
+Friday 30 June 2017 [3:13:58pm] -q/-quit/-exit - exit program
+Friday 30 June 2017 [3:13:58pm] <ref> - bring up verse(s)
+Friday 30 June 2017 [3:13:58pm] -cls - clear screen
+Friday 30 June 2017 [3:13:58pm] -stop
+Friday 30 June 2017 [3:13:58pm] -go
+Friday 30 June 2017 [3:13:58pm] -pictures - list pictures
+Friday 30 June 2017 [3:13:58pm] -picture <picture name>
+Friday 30 June 2017 [3:13:58pm] -backPictures
+Friday 30 June 2017 [3:13:58pm] -backPicture #
+Friday 30 June 2017 [3:13:58pm] -reference - add a Bible reference
+Friday 30 June 2017 [3:13:58pm] -references - view verse refs list
+Friday 30 June 2017 [3:13:58pm] -info - information
+Friday 30 June 2017 [3:13:58pm] -fonts - list fonts
+Friday 30 June 2017 [3:13:58pm] -font <font name>
+Friday 30 June 2017 [3:13:58pm] -fontSize #
+Friday 30 June 2017 [3:13:58pm] -wrapSize #
+Friday 30 June 2017 [3:13:58pm] -pictureUpStepSize #
+Friday 30 June 2017 [3:13:58pm] -textUpStepSize #
+Friday 30 June 2017 [3:13:58pm] -fps <frames per second>
+Friday 30 June 2017 [3:13:58pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:58pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 30 June 2017 [3:13:58pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:58pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 30 June 2017 [3:13:58pm] -adds - list of notes
+Friday 30 June 2017 [3:13:58pm] -add <line of text>
+Friday 30 June 2017 [3:13:58pm] -addsList - list notes (for subtract)
+Friday 30 June 2017 [3:13:58pm] -subtract # - remove from add list (to do)
+Friday 30 June 2017 [3:13:58pm] -messages - list messages
+Friday 30 June 2017 [3:13:58pm] -message # - load a message (not working!)
+Friday 30 June 2017 [3:13:58pm] -messageUp - show message
+Friday 30 June 2017 [3:13:58pm] -m/-misc - testing stuff
+Friday 30 June 2017 [3:13:58pm] -show - slide show
+Friday 30 June 2017 [3:13:58pm] -pictureLots - list picture folders
+Friday 30 June 2017 [3:13:58pm] -pictureLot #
+Friday 30 June 2017 [3:13:58pm] * - not in yet
+Friday 30 June 2017 [3:14:03pm] gs
+Friday 30 June 2017 [3:14:11pm] -q
+Saturday 15 July 2017 [9:15:30pm] -h
+Saturday 15 July 2017 [9:15:30pm] 
+Saturday 15 July 2017 [9:15:30pm] Help:
+Saturday 15 July 2017 [9:15:30pm] -h/-help
+Saturday 15 July 2017 [9:15:30pm] -h2/help2
+Saturday 15 July 2017 [9:15:30pm] -q/-quit/-exit - exit program
+Saturday 15 July 2017 [9:15:30pm] <ref> - bring up verse(s)
+Saturday 15 July 2017 [9:15:30pm] -cls - clear screen
+Saturday 15 July 2017 [9:15:30pm] -stop
+Saturday 15 July 2017 [9:15:30pm] -go
+Saturday 15 July 2017 [9:15:30pm] -pictures - list pictures
+Saturday 15 July 2017 [9:15:30pm] -picture <picture name>
+Saturday 15 July 2017 [9:15:30pm] -backPictures
+Saturday 15 July 2017 [9:15:30pm] -backPicture #
+Saturday 15 July 2017 [9:15:30pm] -reference - add a Bible reference
+Saturday 15 July 2017 [9:15:30pm] -references - view verse refs list
+Saturday 15 July 2017 [9:15:30pm] -info - information
+Saturday 15 July 2017 [9:15:30pm] -fonts - list fonts
+Saturday 15 July 2017 [9:15:30pm] -font <font name>
+Saturday 15 July 2017 [9:15:30pm] -fontSize #
+Saturday 15 July 2017 [9:15:30pm] -wrapSize #
+Saturday 15 July 2017 [9:15:30pm] -pictureUpStepSize #
+Saturday 15 July 2017 [9:15:30pm] -textUpStepSize #
+Saturday 15 July 2017 [9:15:30pm] -fps <frames per second>
+Saturday 15 July 2017 [9:15:30pm] -colour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:15:30pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Saturday 15 July 2017 [9:15:30pm] -backColour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:15:30pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:15:30pm] -adds - list of notes
+Saturday 15 July 2017 [9:15:30pm] -add <line of text>
+Saturday 15 July 2017 [9:15:30pm] -addsList - list notes (for subtract)
+Saturday 15 July 2017 [9:15:30pm] -subtract # - remove from add list (to do)
+Saturday 15 July 2017 [9:15:30pm] -messages - list messages
+Saturday 15 July 2017 [9:15:30pm] -message # - load a message (not working!)
+Saturday 15 July 2017 [9:15:30pm] -messageUp - show message
+Saturday 15 July 2017 [9:15:30pm] -m/-misc - testing stuff
+Saturday 15 July 2017 [9:15:30pm] -show - slide show
+Saturday 15 July 2017 [9:15:30pm] -pictureLots - list picture folders
+Saturday 15 July 2017 [9:15:30pm] -pictureLot #
+Saturday 15 July 2017 [9:15:30pm] * - not in yet
+Saturday 15 July 2017 [9:15:37pm] -h2
+Saturday 15 July 2017 [9:15:37pm] 
+Saturday 15 July 2017 [9:15:37pm] Help 2:
+Saturday 15 July 2017 [9:15:37pm] -h/-help
+Saturday 15 July 2017 [9:15:37pm] -backBoard/-b - toggle on and off
+Saturday 15 July 2017 [9:15:37pm] l, - mouse click for history
+Saturday 15 July 2017 [9:15:53pm] -pictures 
+Saturday 15 July 2017 [9:15:53pm] 
+Saturday 15 July 2017 [9:15:53pm] List of picture names:
+Saturday 15 July 2017 [9:15:53pm] 0) alanfam
+Saturday 15 July 2017 [9:15:53pm] 1) beehive
+Saturday 15 July 2017 [9:15:53pm] 2) bunny
+Saturday 15 July 2017 [9:15:53pm] 3) castle
+Saturday 15 July 2017 [9:15:53pm] 4) cecilyvine
+Saturday 15 July 2017 [9:15:53pm] 5) joel
+Saturday 15 July 2017 [9:15:53pm] 6) owl
+Saturday 15 July 2017 [9:15:53pm] 7) pie
+Saturday 15 July 2017 [9:15:53pm] 8) riankids
+Saturday 15 July 2017 [9:15:53pm] 
+Saturday 15 July 2017 [9:16:08pm] -backPictures 
+Saturday 15 July 2017 [9:16:08pm] 
+Saturday 15 July 2017 [9:16:08pm] Back ground pictures list:
+Saturday 15 July 2017 [9:16:08pm] 0) barry1.png
+Saturday 15 July 2017 [9:16:08pm] 1) blank.png
+Saturday 15 July 2017 [9:16:08pm] 2) centre.png
+Saturday 15 July 2017 [9:16:08pm] 3) roundfishcircle.png
+Saturday 15 July 2017 [9:16:08pm] 4) wallpaper.png
+Saturday 15 July 2017 [9:16:19pm] -backPicture 2
+Saturday 15 July 2017 [9:16:19pm] 
+Saturday 15 July 2017 [9:16:23pm] cls
+Saturday 15 July 2017 [9:16:27pm] -cls
+Saturday 15 July 2017 [9:16:29pm] -h
+Saturday 15 July 2017 [9:16:29pm] 
+Saturday 15 July 2017 [9:16:29pm] Help:
+Saturday 15 July 2017 [9:16:29pm] -h/-help
+Saturday 15 July 2017 [9:16:29pm] -h2/help2
+Saturday 15 July 2017 [9:16:29pm] -q/-quit/-exit - exit program
+Saturday 15 July 2017 [9:16:29pm] <ref> - bring up verse(s)
+Saturday 15 July 2017 [9:16:29pm] -cls - clear screen
+Saturday 15 July 2017 [9:16:29pm] -stop
+Saturday 15 July 2017 [9:16:29pm] -go
+Saturday 15 July 2017 [9:16:29pm] -pictures - list pictures
+Saturday 15 July 2017 [9:16:29pm] -picture <picture name>
+Saturday 15 July 2017 [9:16:29pm] -backPictures
+Saturday 15 July 2017 [9:16:29pm] -backPicture #
+Saturday 15 July 2017 [9:16:29pm] -reference - add a Bible reference
+Saturday 15 July 2017 [9:16:29pm] -references - view verse refs list
+Saturday 15 July 2017 [9:16:29pm] -info - information
+Saturday 15 July 2017 [9:16:29pm] -fonts - list fonts
+Saturday 15 July 2017 [9:16:29pm] -font <font name>
+Saturday 15 July 2017 [9:16:29pm] -fontSize #
+Saturday 15 July 2017 [9:16:29pm] -wrapSize #
+Saturday 15 July 2017 [9:16:29pm] -pictureUpStepSize #
+Saturday 15 July 2017 [9:16:29pm] -textUpStepSize #
+Saturday 15 July 2017 [9:16:29pm] -fps <frames per second>
+Saturday 15 July 2017 [9:16:29pm] -colour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:16:29pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Saturday 15 July 2017 [9:16:29pm] -backColour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:16:29pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Saturday 15 July 2017 [9:16:29pm] -adds - list of notes
+Saturday 15 July 2017 [9:16:29pm] -add <line of text>
+Saturday 15 July 2017 [9:16:29pm] -addsList - list notes (for subtract)
+Saturday 15 July 2017 [9:16:29pm] -subtract # - remove from add list (to do)
+Saturday 15 July 2017 [9:16:29pm] -messages - list messages
+Saturday 15 July 2017 [9:16:29pm] -message # - load a message (not working!)
+Saturday 15 July 2017 [9:16:29pm] -messageUp - show message
+Saturday 15 July 2017 [9:16:29pm] -m/-misc - testing stuff
+Saturday 15 July 2017 [9:16:29pm] -show - slide show
+Saturday 15 July 2017 [9:16:29pm] -pictureLots - list picture folders
+Saturday 15 July 2017 [9:16:29pm] -pictureLot #
+Saturday 15 July 2017 [9:16:29pm] * - not in yet
+Saturday 15 July 2017 [9:16:55pm] -backColour 0 25 0
+Saturday 15 July 2017 [9:16:59pm] -backColour 0 15 0
+Saturday 15 July 2017 [9:17:02pm] q
+Saturday 15 July 2017 [9:17:04pm] -q
+Monday 11 September 2017 [1:45:13pm] -h
+Monday 11 September 2017 [1:45:13pm] 
+Monday 11 September 2017 [1:45:13pm] Help:
+Monday 11 September 2017 [1:45:13pm] -h/-help
+Monday 11 September 2017 [1:45:13pm] -h2/help2
+Monday 11 September 2017 [1:45:13pm] -q/-quit/-exit - exit program
+Monday 11 September 2017 [1:45:13pm] <ref> - bring up verse(s)
+Monday 11 September 2017 [1:45:13pm] -cls - clear screen
+Monday 11 September 2017 [1:45:13pm] -stop
+Monday 11 September 2017 [1:45:13pm] -go
+Monday 11 September 2017 [1:45:13pm] -pictures - list pictures
+Monday 11 September 2017 [1:45:13pm] -picture <picture name>
+Monday 11 September 2017 [1:45:13pm] -backPictures
+Monday 11 September 2017 [1:45:13pm] -backPicture #
+Monday 11 September 2017 [1:45:13pm] -reference - add a Bible reference
+Monday 11 September 2017 [1:45:13pm] -references - view verse refs list
+Monday 11 September 2017 [1:45:13pm] -info - information
+Monday 11 September 2017 [1:45:13pm] -fonts - list fonts
+Monday 11 September 2017 [1:45:13pm] -font <font name>
+Monday 11 September 2017 [1:45:13pm] -fontSize #
+Monday 11 September 2017 [1:45:13pm] -wrapSize #
+Monday 11 September 2017 [1:45:13pm] -pictureUpStepSize #
+Monday 11 September 2017 [1:45:13pm] -textUpStepSize #
+Monday 11 September 2017 [1:45:13pm] -fps <frames per second>
+Monday 11 September 2017 [1:45:13pm] -colour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:45:13pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Monday 11 September 2017 [1:45:13pm] -backColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:45:13pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:45:13pm] -adds - list of notes
+Monday 11 September 2017 [1:45:13pm] -add <line of text>
+Monday 11 September 2017 [1:45:13pm] -addsList - list notes (for subtract)
+Monday 11 September 2017 [1:45:13pm] -subtract # - remove from add list (to do)
+Monday 11 September 2017 [1:45:13pm] -messages - list messages
+Monday 11 September 2017 [1:45:13pm] -message # - load a message (not working!)
+Monday 11 September 2017 [1:45:13pm] -messageUp - show message
+Monday 11 September 2017 [1:45:13pm] -m/-misc - testing stuff
+Monday 11 September 2017 [1:45:13pm] -show - slide show
+Monday 11 September 2017 [1:45:13pm] -pictureLots - list picture folders
+Monday 11 September 2017 [1:45:13pm] -pictureLot #
+Monday 11 September 2017 [1:45:13pm] * - not in yet
+Monday 11 September 2017 [1:45:19pm] -h2
+Monday 11 September 2017 [1:45:19pm] 
+Monday 11 September 2017 [1:45:19pm] Help 2:
+Monday 11 September 2017 [1:45:19pm] -h/-help
+Monday 11 September 2017 [1:45:19pm] -backBoard/-b - toggle on and off
+Monday 11 September 2017 [1:45:19pm] l, - mouse click for history
+Monday 11 September 2017 [1:45:32pm] -pictures 
+Monday 11 September 2017 [1:45:32pm] 
+Monday 11 September 2017 [1:45:32pm] List of picture names:
+Monday 11 September 2017 [1:45:32pm] 0) alanfam
+Monday 11 September 2017 [1:45:32pm] 1) beehive
+Monday 11 September 2017 [1:45:32pm] 2) bunny
+Monday 11 September 2017 [1:45:32pm] 3) castle
+Monday 11 September 2017 [1:45:32pm] 4) cecilyvine
+Monday 11 September 2017 [1:45:32pm] 5) joel
+Monday 11 September 2017 [1:45:32pm] 6) owl
+Monday 11 September 2017 [1:45:32pm] 7) pie
+Monday 11 September 2017 [1:45:32pm] 8) riankids
+Monday 11 September 2017 [1:45:32pm] 
+Monday 11 September 2017 [1:45:45pm] -clear
+Monday 11 September 2017 [1:45:47pm] -cls
+Monday 11 September 2017 [1:45:51pm] -show
+Monday 11 September 2017 [1:46:30pm] -h
+Monday 11 September 2017 [1:46:30pm] 
+Monday 11 September 2017 [1:46:30pm] Help:
+Monday 11 September 2017 [1:46:30pm] -h/-help
+Monday 11 September 2017 [1:46:30pm] -h2/help2
+Monday 11 September 2017 [1:46:30pm] -q/-quit/-exit - exit program
+Monday 11 September 2017 [1:46:30pm] <ref> - bring up verse(s)
+Monday 11 September 2017 [1:46:30pm] -cls - clear screen
+Monday 11 September 2017 [1:46:30pm] -stop
+Monday 11 September 2017 [1:46:30pm] -go
+Monday 11 September 2017 [1:46:30pm] -pictures - list pictures
+Monday 11 September 2017 [1:46:30pm] -picture <picture name>
+Monday 11 September 2017 [1:46:30pm] -backPictures
+Monday 11 September 2017 [1:46:30pm] -backPicture #
+Monday 11 September 2017 [1:46:30pm] -reference - add a Bible reference
+Monday 11 September 2017 [1:46:30pm] -references - view verse refs list
+Monday 11 September 2017 [1:46:30pm] -info - information
+Monday 11 September 2017 [1:46:30pm] -fonts - list fonts
+Monday 11 September 2017 [1:46:30pm] -font <font name>
+Monday 11 September 2017 [1:46:30pm] -fontSize #
+Monday 11 September 2017 [1:46:30pm] -wrapSize #
+Monday 11 September 2017 [1:46:30pm] -pictureUpStepSize #
+Monday 11 September 2017 [1:46:30pm] -textUpStepSize #
+Monday 11 September 2017 [1:46:30pm] -fps <frames per second>
+Monday 11 September 2017 [1:46:30pm] -colour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:46:30pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Monday 11 September 2017 [1:46:30pm] -backColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:46:30pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:46:30pm] -adds - list of notes
+Monday 11 September 2017 [1:46:30pm] -add <line of text>
+Monday 11 September 2017 [1:46:30pm] -addsList - list notes (for subtract)
+Monday 11 September 2017 [1:46:30pm] -subtract # - remove from add list (to do)
+Monday 11 September 2017 [1:46:30pm] -messages - list messages
+Monday 11 September 2017 [1:46:30pm] -message # - load a message (not working!)
+Monday 11 September 2017 [1:46:30pm] -messageUp - show message
+Monday 11 September 2017 [1:46:30pm] -m/-misc - testing stuff
+Monday 11 September 2017 [1:46:30pm] -show - slide show
+Monday 11 September 2017 [1:46:30pm] -pictureLots - list picture folders
+Monday 11 September 2017 [1:46:30pm] -pictureLot #
+Monday 11 September 2017 [1:46:30pm] * - not in yet
+Monday 11 September 2017 [1:46:45pm] -cls
+Monday 11 September 2017 [1:46:47pm] -info
+Monday 11 September 2017 [1:46:47pm] 
+Monday 11 September 2017 [1:46:47pm] Info:
+Monday 11 September 2017 [1:46:47pm]  - Bible reference
+Monday 11 September 2017 [1:46:47pm]  - book number
+Monday 11 September 2017 [1:46:47pm]  - picture
+Monday 11 September 2017 [1:46:47pm]  - number of verses
+Monday 11 September 2017 [1:46:47pm]  - frames per second
+Monday 11 September 2017 [1:47:09pm] -references
+Monday 11 September 2017 [1:47:09pm] 
+Monday 11 September 2017 [1:47:09pm] References:
+Monday 11 September 2017 [1:47:14pm] -h
+Monday 11 September 2017 [1:47:14pm] 
+Monday 11 September 2017 [1:47:14pm] Help:
+Monday 11 September 2017 [1:47:14pm] -h/-help
+Monday 11 September 2017 [1:47:14pm] -h2/help2
+Monday 11 September 2017 [1:47:14pm] -q/-quit/-exit - exit program
+Monday 11 September 2017 [1:47:14pm] <ref> - bring up verse(s)
+Monday 11 September 2017 [1:47:14pm] -cls - clear screen
+Monday 11 September 2017 [1:47:14pm] -stop
+Monday 11 September 2017 [1:47:14pm] -go
+Monday 11 September 2017 [1:47:14pm] -pictures - list pictures
+Monday 11 September 2017 [1:47:14pm] -picture <picture name>
+Monday 11 September 2017 [1:47:14pm] -backPictures
+Monday 11 September 2017 [1:47:14pm] -backPicture #
+Monday 11 September 2017 [1:47:14pm] -reference - add a Bible reference
+Monday 11 September 2017 [1:47:14pm] -references - view verse refs list
+Monday 11 September 2017 [1:47:14pm] -info - information
+Monday 11 September 2017 [1:47:14pm] -fonts - list fonts
+Monday 11 September 2017 [1:47:14pm] -font <font name>
+Monday 11 September 2017 [1:47:14pm] -fontSize #
+Monday 11 September 2017 [1:47:14pm] -wrapSize #
+Monday 11 September 2017 [1:47:14pm] -pictureUpStepSize #
+Monday 11 September 2017 [1:47:14pm] -textUpStepSize #
+Monday 11 September 2017 [1:47:14pm] -fps <frames per second>
+Monday 11 September 2017 [1:47:14pm] -colour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:47:14pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Monday 11 September 2017 [1:47:14pm] -backColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:47:14pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Monday 11 September 2017 [1:47:14pm] -adds - list of notes
+Monday 11 September 2017 [1:47:14pm] -add <line of text>
+Monday 11 September 2017 [1:47:14pm] -addsList - list notes (for subtract)
+Monday 11 September 2017 [1:47:14pm] -subtract # - remove from add list (to do)
+Monday 11 September 2017 [1:47:14pm] -messages - list messages
+Monday 11 September 2017 [1:47:14pm] -message # - load a message (not working!)
+Monday 11 September 2017 [1:47:14pm] -messageUp - show message
+Monday 11 September 2017 [1:47:14pm] -m/-misc - testing stuff
+Monday 11 September 2017 [1:47:14pm] -show - slide show
+Monday 11 September 2017 [1:47:14pm] -pictureLots - list picture folders
+Monday 11 September 2017 [1:47:14pm] -pictureLot #
+Monday 11 September 2017 [1:47:14pm] * - not in yet
+Monday 11 September 2017 [1:47:55pm] -reference 
+Monday 11 September 2017 [1:47:55pm]  - added
+Monday 11 September 2017 [1:48:00pm] -references
+Monday 11 September 2017 [1:48:00pm] 
+Monday 11 September 2017 [1:48:00pm] References:
+Monday 11 September 2017 [1:48:08pm] -cls
+Monday 11 September 2017 [1:48:14pm] Joel 1 4
+Monday 11 September 2017 [1:48:25pm] -stop
+Monday 11 September 2017 [1:48:36pm] -q
+Friday 22 September 2017 [3:44:44pm] -h
+Friday 22 September 2017 [3:44:44pm] 
+Friday 22 September 2017 [3:44:44pm] Help:
+Friday 22 September 2017 [3:44:44pm] -h/-help
+Friday 22 September 2017 [3:44:44pm] -h2/help2
+Friday 22 September 2017 [3:44:44pm] -q/-quit/-exit - exit program
+Friday 22 September 2017 [3:44:44pm] <ref> - bring up verse(s)
+Friday 22 September 2017 [3:44:44pm] -cls - clear screen
+Friday 22 September 2017 [3:44:44pm] -stop
+Friday 22 September 2017 [3:44:44pm] -go
+Friday 22 September 2017 [3:44:44pm] -pictures - list pictures
+Friday 22 September 2017 [3:44:44pm] -picture <picture name>
+Friday 22 September 2017 [3:44:44pm] -backPictures
+Friday 22 September 2017 [3:44:44pm] -backPicture #
+Friday 22 September 2017 [3:44:44pm] -reference - add a Bible reference
+Friday 22 September 2017 [3:44:44pm] -references - view verse refs list
+Friday 22 September 2017 [3:44:44pm] -info - information
+Friday 22 September 2017 [3:44:44pm] -fonts - list fonts
+Friday 22 September 2017 [3:44:44pm] -font <font name>
+Friday 22 September 2017 [3:44:44pm] -fontSize #
+Friday 22 September 2017 [3:44:44pm] -wrapSize #
+Friday 22 September 2017 [3:44:44pm] -pictureUpStepSize #
+Friday 22 September 2017 [3:44:44pm] -textUpStepSize #
+Friday 22 September 2017 [3:44:44pm] -fps <frames per second>
+Friday 22 September 2017 [3:44:44pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 22 September 2017 [3:44:44pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 22 September 2017 [3:44:44pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 22 September 2017 [3:44:44pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 22 September 2017 [3:44:44pm] -adds - list of notes
+Friday 22 September 2017 [3:44:44pm] -add <line of text>
+Friday 22 September 2017 [3:44:44pm] -addsList - list notes (for subtract)
+Friday 22 September 2017 [3:44:44pm] -subtract # - remove from add list (to do)
+Friday 22 September 2017 [3:44:44pm] -messages - list messages
+Friday 22 September 2017 [3:44:44pm] -message # - load a message (not working!)
+Friday 22 September 2017 [3:44:44pm] -messageUp - show message
+Friday 22 September 2017 [3:44:44pm] -m/-misc - testing stuff
+Friday 22 September 2017 [3:44:44pm] -show - slide show
+Friday 22 September 2017 [3:44:44pm] -pictureLots - list picture folders
+Friday 22 September 2017 [3:44:44pm] -pictureLot #
+Friday 22 September 2017 [3:44:44pm] * - not in yet
+Friday 22 September 2017 [3:44:52pm] -pictureLots
+Friday 22 September 2017 [3:44:52pm] 
+Friday 22 September 2017 [3:44:52pm] Up pictures lots list: (to do)
+Friday 22 September 2017 [3:44:52pm] 0) odds
+Friday 22 September 2017 [3:44:52pm] 1) pth
+Friday 22 September 2017 [3:44:52pm] 2) wipe
+Friday 22 September 2017 [3:44:54pm] -pictureLots 2
+Friday 22 September 2017 [3:44:54pm] 
+Friday 22 September 2017 [3:44:54pm] Up pictures lots list: (to do)
+Friday 22 September 2017 [3:44:54pm] 0) odds
+Friday 22 September 2017 [3:44:54pm] 1) pth
+Friday 22 September 2017 [3:44:54pm] 2) wipe
+Friday 22 September 2017 [3:44:58pm] -pictureLot 2
+Friday 22 September 2017 [3:44:58pm] wipe selected
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:58pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:59pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:59pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:59pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:59pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:44:59pm] Screen Shot 2017-09-22 at 3
+Friday 22 September 2017 [3:45:01pm] cls
+Friday 22 September 2017 [3:45:03pm] -cls
+Friday 22 September 2017 [3:45:15pm] -show
+Friday 22 September 2017 [3:46:05pm] -show
+Friday 22 September 2017 [3:47:00pm] -q
+Friday 22 September 2017 [3:52:50pm] -show
+Friday 22 September 2017 [3:52:54pm] -stop
+Friday 22 September 2017 [3:57:10pm] -show
+Friday 22 September 2017 [3:58:00pm] -show
+Friday 22 September 2017 [3:58:51pm] -show
+Friday 22 September 2017 [3:58:55pm] -stop
+Friday 22 September 2017 [3:59:20pm] -show
+Friday 22 September 2017 [3:59:31pm] -show
+Friday 22 September 2017 [3:59:39pm] -go
+Friday 22 September 2017 [3:59:43pm] -cls
+Friday 22 September 2017 [3:59:44pm] -go
+Friday 22 September 2017 [3:59:50pm] -slow
+Friday 22 September 2017 [3:59:55pm] -show
+Friday 22 September 2017 [4:00:46pm] -show
+Friday 22 September 2017 [4:02:13pm] -pictureLot 0
+Friday 22 September 2017 [4:02:13pm] odds selected
+Friday 22 September 2017 [4:02:13pm] alanfam
+Friday 22 September 2017 [4:02:13pm] beehive
+Friday 22 September 2017 [4:02:13pm] bunny
+Friday 22 September 2017 [4:02:13pm] castle
+Friday 22 September 2017 [4:02:13pm] cecilyvine
+Friday 22 September 2017 [4:02:13pm] joel
+Friday 22 September 2017 [4:02:13pm] owl
+Friday 22 September 2017 [4:02:13pm] pie
+Friday 22 September 2017 [4:02:13pm] riankids
+Friday 22 September 2017 [4:02:22pm] -pictureLots
+Friday 22 September 2017 [4:02:22pm] 
+Friday 22 September 2017 [4:02:22pm] Up pictures lots list: (to do)
+Friday 22 September 2017 [4:02:22pm] 0) odds
+Friday 22 September 2017 [4:02:22pm] 1) pth
+Friday 22 September 2017 [4:02:22pm] 2) wipe
+Friday 22 September 2017 [4:02:41pm] -q
+Friday 13 October 2017 [7:37:05pm] -h
+Friday 13 October 2017 [7:37:05pm] 
+Friday 13 October 2017 [7:37:05pm] Help:
+Friday 13 October 2017 [7:37:05pm] -h/-help
+Friday 13 October 2017 [7:37:05pm] -h2/help2
+Friday 13 October 2017 [7:37:05pm] -q/-quit/-exit - exit program
+Friday 13 October 2017 [7:37:05pm] <ref> - bring up verse(s)
+Friday 13 October 2017 [7:37:05pm] -cls - clear screen
+Friday 13 October 2017 [7:37:05pm] -stop
+Friday 13 October 2017 [7:37:05pm] -go
+Friday 13 October 2017 [7:37:05pm] -pictures - list pictures
+Friday 13 October 2017 [7:37:05pm] -picture <picture name>
+Friday 13 October 2017 [7:37:05pm] -backPictures
+Friday 13 October 2017 [7:37:05pm] -backPicture #
+Friday 13 October 2017 [7:37:05pm] -reference - add a Bible reference
+Friday 13 October 2017 [7:37:05pm] -references - view verse refs list
+Friday 13 October 2017 [7:37:05pm] -info - information
+Friday 13 October 2017 [7:37:05pm] -fonts - list fonts
+Friday 13 October 2017 [7:37:05pm] -font <font name>
+Friday 13 October 2017 [7:37:05pm] -fontSize #
+Friday 13 October 2017 [7:37:05pm] -wrapSize #
+Friday 13 October 2017 [7:37:05pm] -pictureUpStepSize #
+Friday 13 October 2017 [7:37:05pm] -textUpStepSize #
+Friday 13 October 2017 [7:37:05pm] -fps <frames per second>
+Friday 13 October 2017 [7:37:05pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:37:05pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 13 October 2017 [7:37:05pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:37:05pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:37:05pm] -adds - list of notes
+Friday 13 October 2017 [7:37:05pm] -add <line of text>
+Friday 13 October 2017 [7:37:05pm] -addsList - list notes (for subtract)
+Friday 13 October 2017 [7:37:05pm] -subtract # - remove from add list (to do)
+Friday 13 October 2017 [7:37:05pm] -messages - list messages
+Friday 13 October 2017 [7:37:05pm] -message # - load a message (not working!)
+Friday 13 October 2017 [7:37:05pm] -messageUp - show message
+Friday 13 October 2017 [7:37:05pm] -m/-misc - testing stuff
+Friday 13 October 2017 [7:37:05pm] -show - slide show
+Friday 13 October 2017 [7:37:05pm] -pictureLots - list picture folders
+Friday 13 October 2017 [7:37:05pm] -pictureLot #
+Friday 13 October 2017 [7:37:17pm] -backPictures
+Friday 13 October 2017 [7:37:17pm] 
+Friday 13 October 2017 [7:37:17pm] Back ground pictures list:
+Friday 13 October 2017 [7:37:17pm] 0) barry1.png
+Friday 13 October 2017 [7:37:17pm] 1) blank.png
+Friday 13 October 2017 [7:37:17pm] 2) centre.png
+Friday 13 October 2017 [7:37:17pm] 3) roundfishcircle.png
+Friday 13 October 2017 [7:37:17pm] 4) wallpaper.png
+Friday 13 October 2017 [7:37:46pm] -pictureLots
+Friday 13 October 2017 [7:37:46pm] 
+Friday 13 October 2017 [7:37:46pm] Up pictures lots list: (to do)
+Friday 13 October 2017 [7:37:46pm] 0) Emily
+Friday 13 October 2017 [7:37:46pm] 1) odds
+Friday 13 October 2017 [7:37:46pm] 2) pth
+Friday 13 October 2017 [7:37:51pm] -pictureLot 0
+Friday 13 October 2017 [7:37:51pm] Emily selected
+Friday 13 October 2017 [7:37:51pm] crocodile
+Friday 13 October 2017 [7:37:54pm] -show
+Friday 13 October 2017 [7:38:02pm] -show
+Friday 13 October 2017 [7:38:09pm] -q
+Friday 13 October 2017 [7:40:49pm] -h
+Friday 13 October 2017 [7:40:49pm] 
+Friday 13 October 2017 [7:40:49pm] Help:
+Friday 13 October 2017 [7:40:49pm] -h/-help
+Friday 13 October 2017 [7:40:49pm] -h2/help2
+Friday 13 October 2017 [7:40:49pm] -q/-quit/-exit - exit program
+Friday 13 October 2017 [7:40:49pm] <ref> - bring up verse(s)
+Friday 13 October 2017 [7:40:49pm] -cls - clear screen
+Friday 13 October 2017 [7:40:49pm] -stop
+Friday 13 October 2017 [7:40:49pm] -go
+Friday 13 October 2017 [7:40:49pm] -pictures - list pictures
+Friday 13 October 2017 [7:40:49pm] -picture <picture name>
+Friday 13 October 2017 [7:40:49pm] -backPictures
+Friday 13 October 2017 [7:40:49pm] -backPicture #
+Friday 13 October 2017 [7:40:49pm] -reference - add a Bible reference
+Friday 13 October 2017 [7:40:49pm] -references - view verse refs list
+Friday 13 October 2017 [7:40:49pm] -info - information
+Friday 13 October 2017 [7:40:49pm] -fonts - list fonts
+Friday 13 October 2017 [7:40:49pm] -font <font name>
+Friday 13 October 2017 [7:40:49pm] -fontSize #
+Friday 13 October 2017 [7:40:49pm] -wrapSize #
+Friday 13 October 2017 [7:40:49pm] -pictureUpStepSize #
+Friday 13 October 2017 [7:40:49pm] -textUpStepSize #
+Friday 13 October 2017 [7:40:49pm] -fps <frames per second>
+Friday 13 October 2017 [7:40:49pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:40:49pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 13 October 2017 [7:40:49pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:40:49pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:40:49pm] -adds - list of notes
+Friday 13 October 2017 [7:40:49pm] -add <line of text>
+Friday 13 October 2017 [7:40:49pm] -addsList - list notes (for subtract)
+Friday 13 October 2017 [7:40:49pm] -subtract # - remove from add list (to do)
+Friday 13 October 2017 [7:40:49pm] -messages - list messages
+Friday 13 October 2017 [7:40:49pm] -message # - load a message (not working!)
+Friday 13 October 2017 [7:40:49pm] -messageUp - show message
+Friday 13 October 2017 [7:40:49pm] -m/-misc - testing stuff
+Friday 13 October 2017 [7:40:49pm] -show - slide show
+Friday 13 October 2017 [7:40:49pm] -pictureLots - list picture folders
+Friday 13 October 2017 [7:40:49pm] -pictureLot #
+Friday 13 October 2017 [7:41:01pm] -q
+Friday 13 October 2017 [7:42:34pm] -h
+Friday 13 October 2017 [7:42:34pm] 
+Friday 13 October 2017 [7:42:34pm] Help:
+Friday 13 October 2017 [7:42:34pm] -h/-help
+Friday 13 October 2017 [7:42:34pm] -h2/help2
+Friday 13 October 2017 [7:42:34pm] -q/-quit/-exit - exit program
+Friday 13 October 2017 [7:42:34pm] <ref> - bring up verse(s)
+Friday 13 October 2017 [7:42:34pm] -cls - clear screen
+Friday 13 October 2017 [7:42:34pm] -stop
+Friday 13 October 2017 [7:42:34pm] -go
+Friday 13 October 2017 [7:42:34pm] -pictures - list pictures
+Friday 13 October 2017 [7:42:34pm] -picture <picture name>
+Friday 13 October 2017 [7:42:34pm] -backPictures
+Friday 13 October 2017 [7:42:34pm] -backPicture #
+Friday 13 October 2017 [7:42:34pm] -reference - add a Bible reference
+Friday 13 October 2017 [7:42:34pm] -references - view verse refs list
+Friday 13 October 2017 [7:42:34pm] -info - information
+Friday 13 October 2017 [7:42:34pm] -fonts - list fonts
+Friday 13 October 2017 [7:42:34pm] -font <font name>
+Friday 13 October 2017 [7:42:34pm] -fontSize #
+Friday 13 October 2017 [7:42:34pm] -wrapSize #
+Friday 13 October 2017 [7:42:34pm] -pictureUpStepSize #
+Friday 13 October 2017 [7:42:34pm] -textUpStepSize #
+Friday 13 October 2017 [7:42:34pm] -fps <frames per second>
+Friday 13 October 2017 [7:42:34pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:42:34pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 13 October 2017 [7:42:34pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:42:34pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:42:34pm] -adds - list of notes
+Friday 13 October 2017 [7:42:34pm] -add <line of text>
+Friday 13 October 2017 [7:42:34pm] -addsList - list notes (for subtract)
+Friday 13 October 2017 [7:42:34pm] -subtract # - remove from add list (to do)
+Friday 13 October 2017 [7:42:34pm] -messages - list messages
+Friday 13 October 2017 [7:42:34pm] -message # - load a message (not working!)
+Friday 13 October 2017 [7:42:34pm] -messageUp - show message
+Friday 13 October 2017 [7:42:34pm] -m/-misc - testing stuff
+Friday 13 October 2017 [7:42:34pm] -show - slide show
+Friday 13 October 2017 [7:42:34pm] -pictureLots - list picture folders
+Friday 13 October 2017 [7:42:34pm] -pictureLot #
+Friday 13 October 2017 [7:44:08pm] -h
+Friday 13 October 2017 [7:44:08pm] 
+Friday 13 October 2017 [7:44:08pm] Help:
+Friday 13 October 2017 [7:44:08pm] -h/-help
+Friday 13 October 2017 [7:44:08pm] -h2/help2
+Friday 13 October 2017 [7:44:08pm] -q/-quit/-exit - exit program
+Friday 13 October 2017 [7:44:08pm] <ref> - bring up verse(s)
+Friday 13 October 2017 [7:44:08pm] -cls - clear screen
+Friday 13 October 2017 [7:44:08pm] -stop
+Friday 13 October 2017 [7:44:08pm] -go
+Friday 13 October 2017 [7:44:08pm] -pictures - list pictures
+Friday 13 October 2017 [7:44:08pm] -picture <picture name>
+Friday 13 October 2017 [7:44:08pm] -backPictures
+Friday 13 October 2017 [7:44:08pm] -backPicture #
+Friday 13 October 2017 [7:44:08pm] -reference - add a Bible reference
+Friday 13 October 2017 [7:44:08pm] -references - view verse refs list
+Friday 13 October 2017 [7:44:08pm] -info - information
+Friday 13 October 2017 [7:44:08pm] -fonts - list fonts
+Friday 13 October 2017 [7:44:08pm] -font <font name>
+Friday 13 October 2017 [7:44:08pm] -fontSize #
+Friday 13 October 2017 [7:44:08pm] -wrapSize #
+Friday 13 October 2017 [7:44:08pm] -pictureUpStepSize #
+Friday 13 October 2017 [7:44:08pm] -textUpStepSize #
+Friday 13 October 2017 [7:44:08pm] -fps <frames per second>
+Friday 13 October 2017 [7:44:08pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:44:08pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 13 October 2017 [7:44:08pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:44:08pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [7:44:08pm] -adds - list of notes
+Friday 13 October 2017 [7:44:08pm] -add <line of text>
+Friday 13 October 2017 [7:44:08pm] -addsList - list notes (for subtract)
+Friday 13 October 2017 [7:44:08pm] -subtract # - remove from add list (to do)
+Friday 13 October 2017 [7:44:08pm] -messages - list messages
+Friday 13 October 2017 [7:44:08pm] -message # - load a message (not working!)
+Friday 13 October 2017 [7:44:08pm] -messageUp - show message
+Friday 13 October 2017 [7:44:08pm] -m/-misc - testing stuff
+Friday 13 October 2017 [7:44:08pm] -show - slide show
+Friday 13 October 2017 [7:44:08pm] -pictureLots - list picture folders
+Friday 13 October 2017 [7:44:08pm] -pictureLot #
+Friday 13 October 2017 [7:44:25pm] -pictures
+Friday 13 October 2017 [7:44:25pm] 
+Friday 13 October 2017 [7:44:25pm] List of picture names:
+Friday 13 October 2017 [7:44:25pm] 0) crocodile
+Friday 13 October 2017 [7:44:25pm] 
+Friday 13 October 2017 [7:44:27pm] -picture 0
+Friday 13 October 2017 [7:44:27pm] crocodile - picture loaded
+Friday 13 October 2017 [7:44:35pm] -q
+Friday 13 October 2017 [8:04:28pm] -backPictures
+Friday 13 October 2017 [8:04:28pm] 
+Friday 13 October 2017 [8:04:28pm] Back ground pictures list:
+Friday 13 October 2017 [8:04:28pm] 0) barry1.png
+Friday 13 October 2017 [8:04:28pm] 1) blank.png
+Friday 13 October 2017 [8:04:28pm] 2) centre.png
+Friday 13 October 2017 [8:04:28pm] 3) roundfishcircle.png
+Friday 13 October 2017 [8:04:28pm] 4) tableTop.png
+Friday 13 October 2017 [8:04:28pm] 5) wallpaper.png
+Friday 13 October 2017 [8:04:32pm] -backPicture 4
+Friday 13 October 2017 [8:04:32pm] 
+Friday 13 October 2017 [8:04:37pm] -cls
+Friday 13 October 2017 [8:04:38pm] -h
+Friday 13 October 2017 [8:04:38pm] 
+Friday 13 October 2017 [8:04:38pm] Help:
+Friday 13 October 2017 [8:04:38pm] -h/-help
+Friday 13 October 2017 [8:04:38pm] -h2/help2
+Friday 13 October 2017 [8:04:38pm] -q/-quit/-exit - exit program
+Friday 13 October 2017 [8:04:38pm] <ref> - bring up verse(s)
+Friday 13 October 2017 [8:04:38pm] -cls - clear screen
+Friday 13 October 2017 [8:04:38pm] -stop
+Friday 13 October 2017 [8:04:38pm] -go
+Friday 13 October 2017 [8:04:38pm] -pictures - list pictures
+Friday 13 October 2017 [8:04:38pm] -picture <picture name>
+Friday 13 October 2017 [8:04:38pm] -backPictures
+Friday 13 October 2017 [8:04:38pm] -backPicture #
+Friday 13 October 2017 [8:04:38pm] -reference - add a Bible reference
+Friday 13 October 2017 [8:04:38pm] -references - view verse refs list
+Friday 13 October 2017 [8:04:38pm] -info - information
+Friday 13 October 2017 [8:04:38pm] -fonts - list fonts
+Friday 13 October 2017 [8:04:38pm] -font <font name>
+Friday 13 October 2017 [8:04:38pm] -fontSize #
+Friday 13 October 2017 [8:04:38pm] -wrapSize #
+Friday 13 October 2017 [8:04:38pm] -pictureUpStepSize #
+Friday 13 October 2017 [8:04:38pm] -textUpStepSize #
+Friday 13 October 2017 [8:04:38pm] -fps <frames per second>
+Friday 13 October 2017 [8:04:38pm] -colour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [8:04:38pm] -colour2 <red> <green> <blue> (0 - 255 each)
+Friday 13 October 2017 [8:04:38pm] -backColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [8:04:38pm] -inputColour <red> <green> <blue> (0 - 100 each)
+Friday 13 October 2017 [8:04:38pm] -adds - list of notes
+Friday 13 October 2017 [8:04:38pm] -add <line of text>
+Friday 13 October 2017 [8:04:38pm] -addsList - list notes (for subtract)
+Friday 13 October 2017 [8:04:38pm] -subtract # - remove from add list (to do)
+Friday 13 October 2017 [8:04:38pm] -messages - list messages
+Friday 13 October 2017 [8:04:38pm] -message # - load a message (not working!)
+Friday 13 October 2017 [8:04:38pm] -messageUp - show message
+Friday 13 October 2017 [8:04:38pm] -m/-misc - testing stuff
+Friday 13 October 2017 [8:04:38pm] -show - slide show
+Friday 13 October 2017 [8:04:38pm] -pictureLots - list picture folders
+Friday 13 October 2017 [8:04:38pm] -pictureLot #
+Friday 13 October 2017 [8:04:56pm] -show
+Friday 13 October 2017 [8:05:11pm] -pictures
+Friday 13 October 2017 [8:05:11pm] 
+Friday 13 October 2017 [8:05:11pm] List of picture names:
+Friday 13 October 2017 [8:05:11pm] 0) appletree
+Friday 13 October 2017 [8:05:11pm] 1) babyincot
+Friday 13 October 2017 [8:05:11pm] 2) crocodile
+Friday 13 October 2017 [8:05:11pm] 3) leaf
+Friday 13 October 2017 [8:05:11pm] 
+Friday 13 October 2017 [8:05:16pm] -picture 0
+Friday 13 October 2017 [8:05:16pm] appletree - picture loaded
+Friday 13 October 2017 [8:05:23pm] -picture 1
+Friday 13 October 2017 [8:05:23pm] babyincot - picture loaded
+Friday 13 October 2017 [8:06:17pm] -picture 0
+Friday 13 October 2017 [8:06:17pm] appletree - picture loaded
+Friday 13 October 2017 [8:06:26pm] -show
+Friday 13 October 2017 [8:07:09pm] -q
+Friday 13 October 2017 [8:15:00pm] -show
+Friday 13 October 2017 [8:15:19pm] -q
+Friday 13 October 2017 [8:17:17pm] -pictures
+Friday 13 October 2017 [8:17:17pm] 
+Friday 13 October 2017 [8:17:17pm] List of picture names:
+Friday 13 October 2017 [8:17:17pm] 0) appletree
+Friday 13 October 2017 [8:17:17pm] 1) babyincot
+Friday 13 October 2017 [8:17:17pm] 2) bear
+Friday 13 October 2017 [8:17:17pm] 3) crocodile
+Friday 13 October 2017 [8:17:17pm] 4) doctorCap
+Friday 13 October 2017 [8:17:17pm] 5) elephant
+Friday 13 October 2017 [8:17:17pm] 6) farmer
+Friday 13 October 2017 [8:17:17pm] 7) leaf
+Friday 13 October 2017 [8:17:17pm] 
+Friday 13 October 2017 [8:17:20pm] -picture 0
+Friday 13 October 2017 [8:17:20pm] appletree - picture loaded
+Friday 13 October 2017 [8:17:25pm] -picture 1
+Friday 13 October 2017 [8:17:25pm] babyincot - picture loaded
+Friday 13 October 2017 [8:17:30pm] -picture 2
+Friday 13 October 2017 [8:17:30pm] bear - picture loaded
+Friday 13 October 2017 [8:17:35pm] -picture 3
+Friday 13 October 2017 [8:17:35pm] crocodile - picture loaded
+Friday 13 October 2017 [8:17:39pm] -picture 4
+Friday 13 October 2017 [8:17:39pm] doctorCap - picture loaded
+Friday 13 October 2017 [8:17:42pm] -picture 5
+Friday 13 October 2017 [8:17:42pm] elephant - picture loaded
+Friday 13 October 2017 [8:17:45pm] -picture 6
+Friday 13 October 2017 [8:17:45pm] farmer - picture loaded
+Friday 13 October 2017 [8:17:49pm] -picture 7
+Friday 13 October 2017 [8:17:49pm] leaf - picture loaded
+Saturday 14 October 2017 [5:00:23pm] -pictures
+Saturday 14 October 2017 [5:00:23pm] 
+Saturday 14 October 2017 [5:00:23pm] List of picture names:
+Saturday 14 October 2017 [5:00:23pm] 0) appletree
+Saturday 14 October 2017 [5:00:23pm] 1) babyincot
+Saturday 14 October 2017 [5:00:23pm] 2) bear
+Saturday 14 October 2017 [5:00:23pm] 3) crocodile
+Saturday 14 October 2017 [5:00:23pm] 4) doctorCap
+Saturday 14 October 2017 [5:00:23pm] 5) elephant
+Saturday 14 October 2017 [5:00:23pm] 6) farmer
+Saturday 14 October 2017 [5:00:23pm] 7) leaf
+Saturday 14 October 2017 [5:00:23pm] 
+Saturday 14 October 2017 [5:00:29pm] -picture 6
+Saturday 14 October 2017 [5:00:29pm] farmer - picture loaded
+Saturday 14 October 2017 [5:00:43pm] -picture bear
+Saturday 14 October 2017 [5:00:43pm] bear - picture loaded
+Saturday 14 October 2017 [5:02:40pm] -picture 1
+Saturday 14 October 2017 [5:02:40pm] babyincot - picture loaded
+Saturday 14 October 2017 [5:02:46pm] -picture 3
+Saturday 14 October 2017 [5:02:46pm] crocodile - picture loaded
+Saturday 14 October 2017 [5:02:54pm] -picture 4
+Saturday 14 October 2017 [5:02:54pm] doctorCap - picture loaded
+Saturday 14 October 2017 [6:00:50pm] -pictures
+Saturday 14 October 2017 [6:00:50pm] 
+Saturday 14 October 2017 [6:00:50pm] List of picture names:
+Saturday 14 October 2017 [6:00:50pm] 0) appletree
+Saturday 14 October 2017 [6:00:50pm] 1) babyincot
+Saturday 14 October 2017 [6:00:50pm] 2) bear
+Saturday 14 October 2017 [6:00:50pm] 3) crocodile
+Saturday 14 October 2017 [6:00:50pm] 4) doctorCap
+Saturday 14 October 2017 [6:00:50pm] 5) elephant
+Saturday 14 October 2017 [6:00:50pm] 6) farmer
+Saturday 14 October 2017 [6:00:50pm] 7) leaf
+Saturday 14 October 2017 [6:00:50pm] 
+Saturday 14 October 2017 [6:01:04pm] -picture 0
+Saturday 14 October 2017 [6:01:04pm] appletree - picture loaded
+Saturday 14 October 2017 [6:01:17pm] -picture 1
+Saturday 14 October 2017 [6:01:17pm] babyincot - picture loaded
+Saturday 14 October 2017 [6:01:30pm] -picture 2
+Saturday 14 October 2017 [6:01:30pm] bear - picture loaded
+Saturday 14 October 2017 [6:01:52pm] -picture 3
+Saturday 14 October 2017 [6:01:52pm] crocodile - picture loaded
+Saturday 14 October 2017 [6:02:09pm] -picture 6
+Saturday 14 October 2017 [6:02:09pm] farmer - picture loaded
+Saturday 14 October 2017 [6:02:23pm] -picture 7
+Saturday 14 October 2017 [6:02:23pm] leaf - picture loaded
+Saturday 14 October 2017 [6:02:36pm] -picture 4
+Saturday 14 October 2017 [6:02:36pm] doctorCap - picture loaded
+Saturday 14 October 2017 [6:02:59pm] -picture 0
+Saturday 14 October 2017 [6:02:59pm] appletree - picture loaded
+Saturday 14 October 2017 [6:03:06pm] -picture 4
+Saturday 14 October 2017 [6:03:06pm] doctorCap - picture loaded
+Saturday 14 October 2017 [6:03:12pm] -picture 0
+Saturday 14 October 2017 [6:03:12pm] appletree - picture loaded
+Saturday 14 October 2017 [6:03:16pm] stop
+Saturday 14 October 2017 [6:03:22pm] -picture 4
+Saturday 14 October 2017 [6:03:22pm] doctorCap - picture loaded
+Saturday 14 October 2017 [6:03:28pm] -picture 0
+Saturday 14 October 2017 [6:03:28pm] appletree - picture loaded
+Saturday 14 October 2017 [6:03:31pm] -stop
+Saturday 14 October 2017 [6:05:03pm] -go
+Saturday 14 October 2017 [6:05:09pm] -cls
+Saturday 14 October 2017 [6:05:17pm] -pictureLot
+Saturday 14 October 2017 [6:05:17pm] Emily selected
+Saturday 14 October 2017 [6:05:17pm] appletree
+Saturday 14 October 2017 [6:05:17pm] babyincot
+Saturday 14 October 2017 [6:05:17pm] bear
+Saturday 14 October 2017 [6:05:17pm] crocodile
+Saturday 14 October 2017 [6:05:17pm] doctorCap
+Saturday 14 October 2017 [6:05:17pm] elephant
+Saturday 14 October 2017 [6:05:17pm] farmer
+Saturday 14 October 2017 [6:05:17pm] leaf
+Saturday 14 October 2017 [6:05:24pm] -pictureLots
+Saturday 14 October 2017 [6:05:24pm] 
+Saturday 14 October 2017 [6:05:24pm] Up pictures lots list: (to do)
+Saturday 14 October 2017 [6:05:24pm] 0) Emily
+Saturday 14 October 2017 [6:05:24pm] 1) odds
+Saturday 14 October 2017 [6:05:24pm] 2) pth
+Saturday 14 October 2017 [6:05:30pm] -pictureLot 1
+Saturday 14 October 2017 [6:05:30pm] odds selected
+Saturday 14 October 2017 [6:05:30pm] alanfam
+Saturday 14 October 2017 [6:05:30pm] beehive
+Saturday 14 October 2017 [6:05:30pm] bunny
+Saturday 14 October 2017 [6:05:30pm] castle
+Saturday 14 October 2017 [6:05:30pm] cecilyvine
+Saturday 14 October 2017 [6:05:30pm] joel
+Saturday 14 October 2017 [6:05:30pm] owl
+Saturday 14 October 2017 [6:05:30pm] pie
+Saturday 14 October 2017 [6:05:30pm] riankids
+Saturday 14 October 2017 [6:05:33pm] -show
+Saturday 14 October 2017 [6:06:15pm] -pictureLots 0
+Saturday 14 October 2017 [6:06:15pm] 
+Saturday 14 October 2017 [6:06:15pm] Up pictures lots list: (to do)
+Saturday 14 October 2017 [6:06:15pm] 0) Emily
+Saturday 14 October 2017 [6:06:15pm] 1) odds
+Saturday 14 October 2017 [6:06:15pm] 2) pth
+Saturday 14 October 2017 [6:06:19pm] -pictureLot 0
+Saturday 14 October 2017 [6:06:19pm] Emily selected
+Saturday 14 October 2017 [6:06:19pm] appletree
+Saturday 14 October 2017 [6:06:19pm] babyincot
+Saturday 14 October 2017 [6:06:19pm] bear
+Saturday 14 October 2017 [6:06:19pm] crocodile
+Saturday 14 October 2017 [6:06:19pm] doctorCap
+Saturday 14 October 2017 [6:06:19pm] elephant
+Saturday 14 October 2017 [6:06:19pm] farmer
+Saturday 14 October 2017 [6:06:19pm] leaf
+Saturday 14 October 2017 [6:06:24pm] -cls
+Saturday 14 October 2017 [6:06:36pm] -pictures
+Saturday 14 October 2017 [6:06:36pm] 
+Saturday 14 October 2017 [6:06:36pm] List of picture names:
+Saturday 14 October 2017 [6:06:36pm] 0) appletree
+Saturday 14 October 2017 [6:06:36pm] 1) babyincot
+Saturday 14 October 2017 [6:06:36pm] 2) bear
+Saturday 14 October 2017 [6:06:36pm] 3) crocodile
+Saturday 14 October 2017 [6:06:36pm] 4) doctorCap
+Saturday 14 October 2017 [6:06:36pm] 5) elephant
+Saturday 14 October 2017 [6:06:36pm] 6) farmer
+Saturday 14 October 2017 [6:06:36pm] 7) leaf
+Saturday 14 October 2017 [6:06:36pm] 
+Saturday 14 October 2017 [6:07:25pm] -picture 6
+Saturday 14 October 2017 [6:07:25pm] farmer - picture loaded
+Saturday 14 October 2017 [6:07:46pm] -q
