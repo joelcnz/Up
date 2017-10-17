@@ -1,8 +1,9 @@
+//#has to be lowercase in folder
 import base;
 
-/// Handle going up pictures
-class PictureMan {
-	Picture[] _pics;
+/// Media Cordinator
+class MediaCor {
+	Media[] _mediaLst;
 	string[] _lots;
 
 	void selectPicture(string[] elms) {
@@ -14,9 +15,9 @@ class PictureMan {
 			import std.ascii : isDigit;
 			if (name[0].isDigit) {
 				try {
-					name = getStrFromNum(name.to!ubyte);
 					if (name == "")
 						throw new Exception("Out of bounds");
+					name = getStrFromNum(name.to!ubyte);
 				} catch(Exception e) {
 					jx.addToHistory("Invalid picture value!");
 				}
@@ -25,14 +26,10 @@ class PictureMan {
 				activate(name, Pict.up);
 				info.picName = name;
 				
-				foreach(sound; g_global.sounds) {
-					import std.string : split;
-					auto audioName = sound.fileName.split(dirSeparator)[1];
-					if (audioName == name ~ ".wav") {
-						sound.play;
-					}
-				}
-				jx.addToHistory(name.to!dstring ~ " - picture loaded");
+				foreach(med; _mediaLst)
+					if (med.name == name && med.sound)
+						med.sound.play;
+				jx.addToHistory(name.to!dstring ~ " - media loaded");
 			} else {
 				jx.addToHistory("Some error!");
 			}
@@ -61,7 +58,7 @@ class PictureMan {
 			jx.addToHistory(""d),
 			jx.addToHistory("Up pictures lots list: (to do)"d);
 		int i;
-		foreach(string entry; dirEntries("pictures", "*", SpanMode.shallow)) {
+		foreach(string entry; dirEntries("media", "*", SpanMode.shallow)) {
 			if (isDir(entry)) {
 				_lots ~= entry.split(dirSeparator)[1];
 				if (toScreen)
@@ -98,9 +95,9 @@ class PictureMan {
 		import std.string;
 		import std.stdio : writeln, writef;
 
-		_pics.length = 0;
+		_mediaLst.length = 0;
 		string[] picList;
-		foreach(string name; dirEntries(buildPath("pictures", g_global.pictureLot), "*.{png,jpg}", SpanMode.shallow)) {
+		foreach(string name; dirEntries(buildPath("media", g_global.pictureLot), "*.{png,jpg}", SpanMode.shallow)) {
 			picList ~= name;
 			if (! toScreen)
 				writeln(name);
@@ -110,10 +107,19 @@ class PictureMan {
 			if (! texture.loadFromFile(name)) { // load off program root folder
 				throw new Exception(name ~ " not load");
 			}
-			auto nm = name.split(dirSeparator)[2]; //pictures[0]/odds[1]/name[2]
-			add(nm[0 .. $ - 4], new Picture(nm, texture));
+			auto nm = name.split(dirSeparator)[2]; //media[0]/odds[1]/name[2]
+			import std.algorithm : until;
+
+			Audio audio = null;
+			auto nameWithOutExt = name.until(".").to!dstring;
+			foreach(ext; ".wav .ogg"d.split) //#has to be lowercase in folder
+				if ((nameWithOutExt ~ ext).exists) {
+					audio = new Audio(nameWithOutExt ~ ext);
+					if (! audio)
+						jx.addToHistory(nameWithOutExt ~ ext, " - found, but failed to load.");
+				}
+			add(nm[0 .. $ - 4], new Media(nm, texture, audio));
 			if (toScreen) {
-				import std.algorithm : until;
 				jx.addToHistory(nm.until(".").to!dstring);
 
 				g_window.clear;
@@ -126,32 +132,32 @@ class PictureMan {
 	}
 
 	void activate(string name, Pict picCase) {
-		foreach(ref pic; this.save) {
-			if (pic.name == name) {
-				pic.picCase = picCase;
-				pic.hide = false;
-				pic.spr.position = Vector2f((g_global.windowWidth - pic.spr.getGlobalBounds().width) / 2, g_global.windowHeight);
+		foreach(ref med; this.save) with(med) {
+			if (med.name == name) {
+				picCase = picCase;
+				hide = false;
+				spr.position = Vector2f((g_global.windowWidth - med.spr.getGlobalBounds().width) / 2, g_global.windowHeight);
 				//pic.spr.position = Vector2f(-pic.spr.getGlobalBounds().width, 0);
 			}
 		}
 	}
 	
-	void add(string name, Picture pic) {
- 		_pics ~= pic;
-		_pics[$ - 1].name = name;
+	void add(string name, Media med) {
+ 		_mediaLst ~= med;
+		_mediaLst[$ - 1].name = name;
 	}
 
 	// Is name in pic's? If it is, return the name else return an empty string
 	string getName(in string name) {
-		foreach(pic; this.save)
-			if (pic.name == name)
+		foreach(med; this.save)
+			if (med.name == name)
 				return name;
 		return "";
 	}
 
 	string getStrFromNum(in ubyte select) {
-		if (select < _pics.length)
-			return _pics[select].toString;
+		if (select < _mediaLst.length)
+			return _mediaLst[select].toString;
 		else
 			return "";
 	}
@@ -159,32 +165,32 @@ class PictureMan {
 	/// Show all pictures in folder but moving them up and up
 	void show() {
 		float y = g_global.windowHeight;
-		foreach(p; this.save) {
-			p.hide = false;
-			p.spr.position = Vector2f(p.spr.position.x, y);
-			p.picCase = Pict.up;
-			y += p.spr.getGlobalBounds().height;
+		foreach(med; this.save) {
+			med.hide = false;
+			med.spr.position = Vector2f(med.spr.position.x, y);
+			med.picCase = Pict.up;
+			y += med.spr.getGlobalBounds().height;
 		}
 	}
 
 	void process() {
-		foreach(pic; this.save)
-			pic.process;
+		foreach(med; this.save)
+			med.process;
 	}
 	
 	void hideAll() {
-		foreach(pic; this.save)
-			pic.hide = true;
+		foreach(med; this.save)
+			med.hide = true;
 	}
 	
 	void draw() {
-		foreach(pic; this.save)
-			pic.draw;
+		foreach(med; this.save)
+			med.draw;
 	}
 		
 	// a forward range
-	@property bool empty() { return _pics.length == 0; }
-	@property ref auto front() { return _pics[0]; }
-	void popFront() { _pics = _pics[1 .. $]; }
-	auto save() { return _pics; }
+	@property bool empty() { return _mediaLst.length == 0; }
+	@property ref auto front() { return _mediaLst[0]; }
+	void popFront() { _mediaLst = _mediaLst[1 .. $]; }
+	auto save() { return _mediaLst; }
 }

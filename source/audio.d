@@ -8,7 +8,7 @@ private:
 public:
 	auto fileName() { return _fileName; }
 
-	this(string fileName0) {
+	this(dstring fileName0) {
 		_fileName = fileName0;
 		_soundBuf = new SoundBuffer;
 		_soundBuf.loadFromFile(_fileName);

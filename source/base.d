@@ -12,7 +12,7 @@ public {
 		   jmisc,
 		   dini.dini;
 
-	import setup, upwords, pictureman, picture, audio, setfile, backpictureman, backpicture;
+	import setup, upwords, mediacor, media, audio, setfile, backpictureman, backpicture;
 }
 
 enum Pict {up, stopped, remove} //#what about remove?
@@ -39,8 +39,8 @@ struct Global {
 
 	int windowWidth, windowHeight;
 
-	PictureMan pictureMan;
-	Picture picture;
+	MediaCor mediaCor;
+	Media media;
 
 	BackPictureMan backPictures;
 	BackPicture backPicture;
@@ -68,7 +68,6 @@ struct Global {
 	}
 	
 	Message[] messages;
-	Audio[] sounds;
 }
 Global g_global;
 

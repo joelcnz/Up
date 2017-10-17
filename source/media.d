@@ -1,10 +1,11 @@
 //#not work!
 import base;
 
-class Picture {
+class Media {
 private:
 	string _name;
 	Sprite _spr;
+	Audio _sound;
 	Pict _picCase;
 	bool _hide;
 public:
@@ -13,6 +14,7 @@ public:
 		void name(in string name0) { _name = name0; }
 
 		Sprite spr() { return _spr; }
+		Audio sound() { return _sound; }
 
 		Pict picCase() { return _picCase; }
 		void picCase(in Pict picCase0) { _picCase = picCase0; }
@@ -21,7 +23,7 @@ public:
 		void hide(in bool hide0) { _hide = hide0; }
 	}
 
-	this(in string name, in Texture texture) {
+	this(in string name, in Texture texture, Audio sound) {
 		_hide = false;
 		_picCase = Pict.stopped;
 		_name = name;
@@ -29,6 +31,8 @@ public:
 		// Setup picture let sprite object using texture object
 		_spr = new Sprite(texture);
 		_spr.position = Vector2f((g_global.windowWidth - _spr.getGlobalBounds().width) / 2, -_spr.getGlobalBounds().height); // up out of sight
+
+		_sound = sound;
 	}
 	
 	void process() {
