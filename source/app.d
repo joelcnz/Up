@@ -258,44 +258,7 @@ int main(string[] args) {
 						g_window.close;
 					break;
 					case "h", "help":
-						foreach(aline; File("help1.txt").byLine) /+["",
-										"Help:",
-										"-h/-help",
-										"-h2/help2",
-										"-q/-quit/-exit - exit program",
-										"<ref> - bring up verse(s)",
-										"-cls - clear screen",
-										"-stop",
-										"-go",
-										"-pictures - list pictures",
-										"-picture <picture name>",
-										"-backPictures",
-										"-backPicture #",
-										"-reference - add a Bible reference",
-										"-references - view verse refs list",
-										"-info - information",
-										"-fonts - list fonts",
-										"-font <font name>",
-										"-fontSize #",
-										"-wrapSize #",
-										"-pictureUpStepSize #",
-										"-textUpStepSize #",
-										"-fps <frames per second>",
-										"-colour <red> <green> <blue> (0 - 100 each)",
-										"-colour2 <red> <green> <blue> (0 - 255 each)",
-										"-backColour <red> <green> <blue> (0 - 100 each)",
-										"-inputColour <red> <green> <blue> (0 - 100 each)",
-										"-adds - list of notes",
-										"-add <line of text>",
-										"-addsList - list notes (for subtract)",
-										"-subtract # - remove from add list (to do)",
-										"-messages - list messages",
-										"-message # - load a message (not working!)",
-										"-messageUp - show message",
-										"-m/-misc - testing stuff",
-										"-show - slide show",
-										"-pictureLots - list picture folders",
-										"-pictureLot #"]) +/
+						foreach(aline; File("help1.txt").byLine)
 							addToHistory(aline.to!string);
 					break;
 					case "h2", "help2":
