@@ -6,7 +6,7 @@ class MediaCor {
 	Media[] _mediaLst;
 	string[] _lots;
 
-	void selectPicture(string[] elms) {
+	void selectMedia(string[] elms) {
 		if (elms.length == 2) {
 			import std.path : dirSeparator;
 
@@ -36,7 +36,7 @@ class MediaCor {
 		}
 	}
 
-	void listPictureFiles(InputJex jx) {
+	void listMediaFiles(InputJex jx) {
 		foreach(aline; ["",
 				"List of picture names:"])
 			jx.addToHistory(aline.to!dstring);
@@ -46,7 +46,7 @@ class MediaCor {
 		jx.addToHistory("");
 	}
 
-	void listPictureLots(InputJex jx, bool toScreen = true) {
+	void listMediaLots(InputJex jx, bool toScreen = true) {
 		import std.path : dirSeparator;
 		import std.file;
 		import std.range;
@@ -68,7 +68,7 @@ class MediaCor {
 		}
 	}
 
-	void selectPictureLot(InputJex jx, in string[] elm, in bool toString = false) {
+	void selectMediaLot(InputJex jx, in string[] elm, in bool toString = false) {
 		ubyte selectNum;
 		import std.stdio;
 
@@ -86,10 +86,10 @@ class MediaCor {
 		} else {
 			jx.addToHistory("Invalid data"d);
 		}
-		loadPictureLot(toString);
+		loadMediaLot(toString);
 	}
 
-	void loadPictureLot(in bool toScreen = false) {
+	void loadMediaLot(in bool toScreen = false) {
 		import std.path : buildPath, dirSeparator;
 		import std.file;
 		import std.string;
@@ -132,11 +132,11 @@ class MediaCor {
 	}
 
 	void activate(string name, Pict picCase) {
-		foreach(ref med; this.save) with(med) {
+		foreach(ref med; this.save) {
 			if (med.name == name) {
-				picCase = picCase;
-				hide = false;
-				spr.position = Vector2f((g_global.windowWidth - med.spr.getGlobalBounds().width) / 2, g_global.windowHeight);
+				med.picCase = picCase;
+				med.hide = false;
+				med.spr.position = Vector2f((g_global.windowWidth - med.spr.getGlobalBounds().width) / 2, g_global.windowHeight);
 				//pic.spr.position = Vector2f(-pic.spr.getGlobalBounds().width, 0);
 			}
 		}

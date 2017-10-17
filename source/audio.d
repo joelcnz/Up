@@ -2,7 +2,7 @@ import base;
 
 class Audio {
 private:
-	string _fileName;
+	dstring _fileName;
 	SoundBuffer _soundBuf;
 	Sound _sound;
 public:
@@ -11,7 +11,9 @@ public:
 	this(dstring fileName0) {
 		_fileName = fileName0;
 		_soundBuf = new SoundBuffer;
-		_soundBuf.loadFromFile(_fileName);
+		import std.conv: to;
+
+		_soundBuf.loadFromFile(_fileName.to!string);
 		_sound = new Sound;
 		_sound.setBuffer(_soundBuf);
 	}

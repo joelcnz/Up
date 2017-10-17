@@ -109,7 +109,7 @@ int main(string[] args) {
 	Up[] ups;
 	bool moving = true;
 
-	g_global.pictureMan = new PictureMan;
+	g_global.mediaCor = new MediaCor;
 
 	void loadBackPictures() {
 		g_global.backPictures = new BackPictureMan;
@@ -147,15 +147,6 @@ int main(string[] args) {
 		writeln;
 	}
 
-	void loadSounds() {
-		writeln("Sounds:");
-		foreach(string name; dirEntries("audio", "*.{wav, ogg}", SpanMode.shallow)) {
-			g_global.sounds ~= new Audio(name);
-			writeln(name);
-		}
-		writeln;
-	}
-
 	void loadLittleNotes() {
 		//#here - add notes
 		writeln("Addsnotes:");
@@ -166,9 +157,8 @@ int main(string[] args) {
 		writeln;
 	}
 
-	g_global.pictureMan.listPictureLots(g_inputJex, false);
-	g_global.pictureMan.loadPictureLot();
-	loadSounds;
+	g_global.mediaCor.listMediaLots(g_inputJex, false);
+	g_global.mediaCor.loadMediaLot();
 	loadBackPictures;
 	loadFontNames;
 	loadMessages;
@@ -192,7 +182,7 @@ int main(string[] args) {
 		}
 		
 		if (moving) {
-			g_global.pictureMan.process;
+			g_global.mediaCor.process;
 
 			foreach(up; ups)
 				up.process;
@@ -347,10 +337,10 @@ int main(string[] args) {
 						setFontSize(elms);
 					break;
 					case "pictureLot":
-						g_global.pictureMan.selectPictureLot(jx, elms, true);
+						g_global.mediaCor.selectMediaLot(jx, elms, true);
 					break;
 					case "pictureLots":
-						g_global.pictureMan.listPictureLots(jx);
+						g_global.mediaCor.listMediaLots(jx);
 						break;
 					case "textUpStepSize":
 						upStep(elms, g_global.textUpStepSize, jx);
@@ -359,7 +349,7 @@ int main(string[] args) {
 						upStep(elms, g_global.pictureUpStep, jx);
 						break;
 					case "show":
-						g_global.pictureMan.show();
+						g_global.mediaCor.show();
 					break;
 					case "backPictures":
 						listBackPictures;
@@ -368,10 +358,10 @@ int main(string[] args) {
 						selectBackPicture(elms);
 					break;
 					case "picture":
-						g_global.pictureMan.selectPicture(elms);
+						g_global.mediaCor.selectMedia(elms);
 					break;
 					case "pictures":
-						g_global.pictureMan.listPictureFiles(jx);
+						g_global.mediaCor.listMediaFiles(jx);
 					break;
 					case "wrapSize":
 						setWrapSize(elms);
@@ -385,7 +375,7 @@ int main(string[] args) {
 						break;
 					case "m", "misc":
 						jx.addToHistory("See other terminal"d);
-						jview(g_global.pictureMan);
+						jview(g_global.mediaCor);
 					break;
 					case "add":
 						addNotesLine(elms);
@@ -470,7 +460,7 @@ int main(string[] args) {
 					case "cls":
 						jx.clearHistory;
 						ups.length = 0;
-						g_global.pictureMan.hideAll;
+						g_global.mediaCor.hideAll;
 						//g_global.backPicture._fileName = "";
 						//g_global.backPicture._spr = null;
 					break;
@@ -516,7 +506,7 @@ int main(string[] args) {
 
 		g_global.backPicture.draw;
 
-		g_global.pictureMan.draw;
+		g_global.mediaCor.draw;
 
 		foreach(up; ups)
 			if (up.txt.position.y < g_global.windowHeight)
