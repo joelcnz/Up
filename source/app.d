@@ -258,7 +258,7 @@ int main(string[] args) {
 						g_window.close;
 					break;
 					case "h", "help":
-						foreach(aline; ["",
+						foreach(aline; File("help1.txt").byLine) /+["",
 										"Help:",
 										"-h/-help",
 										"-h2/help2",
@@ -295,8 +295,8 @@ int main(string[] args) {
 										"-m/-misc - testing stuff",
 										"-show - slide show",
 										"-pictureLots - list picture folders",
-										"-pictureLot #"])
-							addToHistory(aline);
+										"-pictureLot #"]) +/
+							addToHistory(aline.to!string);
 					break;
 					case "h2", "help2":
 						foreach(aline; ["",
