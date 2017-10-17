@@ -62,7 +62,7 @@ public:
 	
 	void draw() {
 		//#out line
-		version(all) {
+		{
 			auto orgColour = _txt.getColor;
 			auto orgPos = _txt.position;
 			_txt.setColor = Color(0,0,0);
@@ -84,16 +84,19 @@ public:
 
 //#What's this?
 void doMessage(ref Up[] ups, in string fileName) {
-	/+
-	string[] txts;
-	foreach(line; File(filename).byLine) {
-		txts ~= wrap(line, g_global.chunkSize, null, null, 4);
-	}
-	+/
-	import std.range;
-	import std.string;
+//	import std.string;
 	import std.conv;
+
+/+
+	string[] txts;
+	foreach(line; File(fileName).byLine) {
+		txts ~= wrap(line, g_global.chunkSize, null, null, 4).to!string;
+	}
++/
+	import std.range;
+
 	foreach(y, line; File(fileName).byLine.enumerate) {
+//	foreach(y, line; txts) {
 		//auto chunk = wrap(line, g_global.chunkSize, null, null, 4).to!string;
 		//mixin(trace("chunk"));
 		ups ~= new Up(line.to!string,
