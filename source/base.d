@@ -59,6 +59,8 @@ struct Global {
 		  inputColour; //#not used yet, for input text opposite of colour here
 	
 	string[] addsLines;
+	string[] settingFileNames;
+	Message[] messages;
 
 	void saveAddsLines() {
 		import std.stdio;
@@ -66,8 +68,6 @@ struct Global {
 		foreach(line; addsLines)
 			f.writeln(line);
 	}
-	
-	Message[] messages;
 }
 Global g_global;
 

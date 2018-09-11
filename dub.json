@@ -6,7 +6,7 @@
     "authors": ["Joel"],
 	"lflags-osx" : ["-L../../DSFMLlibs"],
     "sourcePaths" : ["source",
-                     "../../BibleLib/source/",
+                     "../../BibleLib/source",
                      "../../JecLib/source",
                      "../../JMiscLib/source",
                      "../../IniLib/source",

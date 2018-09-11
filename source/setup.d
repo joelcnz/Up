@@ -12,7 +12,11 @@ struct Setup {
 			backPicture.load("barry1.png");
 
 			// load from HDD
-			settings.setIniFileName("settingfiles/settings.ini");
+			import std.path: buildPath;
+			import std.file: readText;
+
+			// file contence(sp): settingfiles/settings copy
+			settings.setIniFileName(buildPath("settingfiles", readText("settingsSelect.ini")) ~ ".ini");
 			settings.load();
 		}
 	}

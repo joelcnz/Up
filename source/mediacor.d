@@ -26,7 +26,7 @@ class MediaCor {
 				activate(name, Pict.up);
 				info.picName = name;
 				
-				foreach(med; _mediaLst)
+				foreach(med; this.save)
 					if (med.name == name && med.sound)
 						med.sound.play;
 				jx.addToHistory(name.to!dstring ~ " - media loaded");
@@ -59,7 +59,7 @@ class MediaCor {
 			jx.addToHistory("Up pictures lots list: (to do)"d);
 		int i;
 		foreach(string entry; dirEntries("media", "*", SpanMode.shallow)) {
-			if (isDir(entry)) {
+			if (entry.isDir) {
 				_lots ~= entry.split(dirSeparator)[1];
 				if (toScreen)
 					jx.addToHistory(text(i, ") ", _lots[$ - 1]).to!dstring);
@@ -164,6 +164,7 @@ class MediaCor {
 
 	/// Show all pictures in folder but moving them up and up
 	void show() {
+		//g_showing = true;
 		float y = g_global.windowHeight;
 		foreach(med; this.save) {
 			med.hide = false;

@@ -1,3 +1,5 @@
+//#donkey plops!
+//#work point
 //#not working
 //#redundant, I think
 //#verses only work once!
@@ -135,6 +137,17 @@ int main(string[] args) {
 		writeln;
 	}
 
+	void loadSettingsFileNames() {
+		writeln("Settings files names:");
+
+		foreach(string name; dirEntries("settingfiles", "*.{ini}", SpanMode.shallow)) {
+			name = name[name.indexOf(`/`) + 1 .. $ - 4];
+			g_global.settingFileNames ~= name;
+			writeln(name);
+		}
+		writeln;
+	}
+
 	void loadMessages() {
 		g_global.messages.length = 0;
 		writeln("Messages:");
@@ -157,6 +170,7 @@ int main(string[] args) {
 		writeln;
 	}
 
+	loadSettingsFileNames;
 	g_global.mediaCor.listMediaLots(g_inputJex, false);
 	g_global.mediaCor.loadMediaLot();
 	loadBackPictures;
@@ -183,13 +197,8 @@ int main(string[] args) {
 		
 		if (moving) {
 			g_global.mediaCor.process;
-
-			foreach(up; ups)
-				up.process;
-
-			ups = remove!"a.flaggedForDeletion"(ups);
-			
-			debug(5) if (ups.length > 0) mixin(traceList("ups[0].txt.getLocalBounds.height g_global.fontSize".split));
+			ups.each!"a.process";
+			ups = ups.remove!"a.flaggedForDeletion";
 		}
 
 		jx.process; //#input
@@ -257,22 +266,40 @@ int main(string[] args) {
 					case "q", "quit", "exit":
 						g_window.close;
 					break;
-					case "h", "help":
+					case "h", "h1", "help":
 						foreach(aline; File("help1.txt").byLine)
 							addToHistory(aline.to!string);
 					break;
 					case "h2", "help2":
-						foreach(aline; ["",
-										"Help 2:",
-									   	"-h/-help",
-										"-h2/-help2",
-										"-backBoard/-b - toggle on and off",
-										"l, - mouse click for history",
-										"*sets - list setting files",
-										"*set # - load setting file",
-										"*saveSet <file name>",
-									 	"* - not in yet"])
-							addToHistory(aline);
+						foreach(aline; File("help2.txt").byLine)
+							addToHistory(aline.to!string);
+					break;
+					case "sets":
+						showSettingsFileNames;
+					break;
+					case "set":
+						selectSet(elms);
+						addToHistory("Restart needed for the changes to take effect..");
+					break;
+					case "saveSet":
+						try {
+							g_global.settings.setIniFileName(buildPath("settingfiles", elms[1]) ~ ".ini");
+							import std.stdio: File, write;
+
+							File("settingsSelect.ini", "w").write(elms[1]);
+							g_global.settings.save();
+						} catch(Exception e) {
+							addToHistory("Error with saving");
+						}
+						//saveSet(elms);
+					break;
+					case "removeSet":
+						//#work point
+						try {
+							removeSettingFileName(getNumSafe(elms[1]));
+						} catch(Exception e) {
+							addToHistory("Failed!");
+						}
 					break;
 					case "backBoard", "b":
 						if (backBoard._power == true) {
@@ -420,7 +447,7 @@ int main(string[] args) {
 											])
 								jx.addToHistory(aline.to!dstring);
 					break;
-					case "cls":
+					case "cls", "clear":
 						jx.clearHistory;
 						ups.length = 0;
 						g_global.mediaCor.hideAll;
@@ -429,17 +456,22 @@ int main(string[] args) {
 					break;
 					case "reference":
 						auto add = elms[1 .. $].join(" ");
-						append("gleaned.txt", add ~ "\n");
+						append(buildPath("references", "random.txt"), add ~ "\n");
 						jx.addToHistory(add.to!dstring ~ " - added"d);
 					break;
 					case "references":
-						auto verses = readText("gleaned.txt").split("\n");
-						jx.addToHistory("");
-						jx.addToHistory("References:");
-						int x, y;
-
 						version(none) {
 							auto verses = readText("gleaned.txt").split("\n");
+							jx.addToHistory("");
+							jx.addToHistory("References:");
+							int x = 0, y = 0;
+							foreach(i, verse; verses) {
+
+							}
+						}
+
+						version(all) {
+							auto verses = readText(buildPath("references", "random.txt")).split("\n");
 							jx.addToHistory("");
 							jx.addToHistory("References:");
 							string aline;
@@ -535,6 +567,55 @@ void selectFont(string[] elms) {
 	}
 }
 
+
+auto getNumSafe(string str) {
+	ubyte selectNum;
+	
+	try {
+		selectNum = str.to!ubyte;
+	} catch(Exception e) {
+		jx.addToHistory("Invalid data"d);
+
+		return 0.to!ubyte;
+	}
+
+	return selectNum;
+}
+
+void selectSet(string[] elms) {
+/+
+	ubyte selectNum;
+	
+	try {
+		if (elms.length == 2)
+			selectNum = elms[1].to!ubyte;
+	} catch(Exception e) {
+		jx.addToHistory("Invalid data"d);
+		return;
+	}
+	+/
+	void error() {
+		addToHistory("Invalid data");
+	}
+
+	if (elms.length == 0) {
+		error;
+
+		return;
+	}
+	ubyte selectNum = getNumSafe(elms[1]);
+	if (selectNum < g_global.settingFileNames.length) {
+		import std.path: buildPath;
+
+		File("settingsSelect.ini", "w").write(g_global.settingFileNames[selectNum]);
+		addToHistory(format("%s - settings file selected", g_global.settingFileNames[selectNum]));
+	} else {
+		error;
+
+		return;
+	}
+}
+
 void setFontSize(string[] elms) {
 	if (elms.length != 2) {
 		writeln("Wrong amout of arguments.");
@@ -600,8 +681,11 @@ void setWrapSize(string[] elms) {
 	}
 }
 
-void addToHistory(in string message) {
-	jx.addToHistory(message.to!dstring);
+void addToHistory(T...)(T args) {// (in string message) {
+	import std.typecons: tuple;
+
+	//jx.addToHistory(message.to!dstring);
+	jx.addToHistory(tuple(args).expand);
 }
 
 void listMessages() {
@@ -659,6 +743,28 @@ void addslist() {
 	addToHistory("Notes list:");
 	foreach(i, dline; g_global.addsLines)
 		addToHistory(text(i, ") ", dline));
+}
+
+void showSettingsFileNames() {
+	gap;
+	addToHistory("Settings file names list:");
+	foreach(i, fileName; g_global.settingFileNames)
+		addToHistory(text(i, ") ", fileName));
+}
+
+//#donkey plops!
+void removeSettingFileName(in int nameToRemoveIndex) {
+	import std.algorithm : remove;
+
+	try {
+		with(g_global) {
+			string toRemove = settingFileNames[nameToRemoveIndex];
+			settingFileNames = settingFileNames.remove!(f => f == toRemove);
+			addToHistory(toRemove, " has been removed from disk.");
+		}
+	} catch(Exception e) {
+		addToHistory("Some thing went wrong");
+	}
 }
 
 //#not working

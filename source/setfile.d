@@ -39,7 +39,6 @@ struct SetFile {
 			with(backPicture)
 				load(_fileName);
 
-
 			auto colourString = ini["settings"].getKey("verseTxtColour").split.to!(ubyte[]);
 			verseTxtColour = Color(colourString[0], colourString[1], colourString[2]);
 
@@ -52,25 +51,25 @@ struct SetFile {
 	}
 	
 	void save() {
+		writeln("Saving: ", iniFileName);
 		with(g_global) {
 			auto _file = File(iniFileName, "w");
 			with(_file) {
 				writeln("[settings]");
-				alias f = format;
-				writeln(f("currentFontFileName=%s", currentFontFileName));
-				writeln(f(           "fontSize=%s", fontSize));
-				writeln(f(          "chunkSize=%s", chunkSize));
-				writeln(f(                "fps=%s", fps));
-				writeln(f(        "backPicture=%s", backPicture._fileName));
-				writeln(f(      "pictureUpStep=%s", pictureUpStep));
-				writeln(f(     "textUpStepSize=%s", textUpStepSize));
-				writeln(f(         "pictureLot=%s", pictureLot));
+				writefln("currentFontFileName=%s", currentFontFileName);
+				writefln(           "fontSize=%s", fontSize);
+				writefln(          "chunkSize=%s", chunkSize);
+				writefln(                "fps=%s", fps);
+				writefln(        "backPicture=%s", backPicture._fileName);
+				writefln(      "pictureUpStep=%s", pictureUpStep);
+				writefln(     "textUpStepSize=%s", textUpStepSize);
+				writefln(         "pictureLot=%s", pictureLot);
 				with(verseTxtColour)
-					writeln(f("verseTxtColour=%s %s %s", r, g, b));
+					writefln("verseTxtColour=%s %s %s", r, g, b);
 				with(backGroundColour)
-					writeln(f("backGroundColour=%s %s %s", r, g, b));
+					writefln("backGroundColour=%s %s %s", r, g, b);
 				with(inputColour)
-					writeln(f("inputColour=%s %s %s", r, g, b));
+					writefln("inputColour=%s %s %s", r, g, b);
 
 			}
 		}

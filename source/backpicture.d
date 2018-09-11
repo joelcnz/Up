@@ -25,7 +25,7 @@ struct BackPicture {
 		if (! texture.loadFromFile(fileNameTmp)) { // load off program root folder
 			throw new Exception(fileNameTmp ~ " not load");
 		}
-		_fileName = fileName0;	
+		_fileName = fileName0;
 		_spr = new Sprite(texture);
 		_pos = Vector2f((g_global.windowWidth - _spr.getGlobalBounds().width) / 2,
 								(g_global.windowHeight - _spr.getGlobalBounds().height) / 2);

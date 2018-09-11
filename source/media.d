@@ -57,8 +57,6 @@ public:
 	}
 	
 	override string toString() {
-		import std.stdio;
-
 		return _name;
 	}
 }

@@ -1,6 +1,6 @@
+//#work here, add verse ref at end too
 //#out line
 //#What's this?
-//#not sure on this
 //#I don't know
 
 debug = 4;
@@ -109,39 +109,28 @@ auto doReferance(ref Up[] ups, in string reference, in string text = "") {
 	import std.stdio : writef;
 	import std.string;
 
-	debug(4)
-		mixin(trace("reference"));
-
 	string str;
 	if (text == "") {
 		with(g_bible) {
-			str = argReference( reference.split ); //argReferenceToArgs(reference) );
-			mixin(trace("str"));
+			//#work here, add verse ref at end too
+			str = argReference( reference.split ); // ~ "\n" ~ getRef(reference.split); //argReferenceToArgs(reference) );
 		}
-		debug(4)
-			writeln("TEST:\n", [str]);
 	} else {
 		str = text;
 	}
 
-	debug(4)
-		mixin(trace("str"));
 	if (! str.length) {
 		writeln("No text!");
 
 		return -1;
 	}
 	auto lines = str.split("\n");
-	writeln("Lines: ", [lines]);
 	string[] txts;
 	
-	foreach(const txt; lines[0 .. text == "" ? $ - 1 : $]) { //#I don't know
+	//foreach(const txt; lines[0 .. text == "" ? $ - 1 : $]) { //#I don't know
+	foreach(const txt; lines) {
 		txts ~= wrap(txt, g_global.chunkSize, null, null, 4).split("\n");
 	}
-	mixin(trace("txts"));
-	debug(5) foreach(i, a; txts)
-				writeln(i, "-Looking for a gap ", [a]);
-
 	import std.conv;
 
 	int start;
@@ -152,24 +141,17 @@ auto doReferance(ref Up[] ups, in string reference, in string text = "") {
 		start = cast(int)(ups[$ - 1].txt.position.y + g_global.fontSize * 2);
 	else
 		// plop below the screen
-		start = g_global.windowHeight; // + 30;
-	debug(5) mixin(trace("g_global.fontSize"));
+		start = g_global.windowHeight;
 
 	// Add each line to ups
+	float ypos = start;
 	foreach(i, txt; txts) {
-		ups ~= new Up(txt, Vector2f(/* dummy */ 0, start + i * g_global.fontSize));
-		debug(5) mixin(trace("g_global.fontSize"));
-		//ups ~= new Up(txt, Vector2f(200, windowHeight + 30 + i * 30));
+		ups ~= new Up(txt, Vector2f(/* dummy: */ 0, ypos)); //start + i * g_global.fontSize));
+		if (txt != "")
+			ypos += g_global.fontSize;
 	}
-	debug(5) mixin(trace("/* before */ ups.length"));
-	// Get rid of the empty lines
 
-	//#not sure on this
-	//ups = remove!"a.txt.getLocalBounds().width < a.fontHeight"(ups);
-	if (text == "")
-		//ups = 
-		ups.remove!(a => a.txt.getLocalBounds().width < 1); //(ups);
-	debug(5) mixin(trace("/* after */ ups.length"));
+	ups = ups.remove!(up => up.flaggedForDeletion);
 
 	return 0;
 }
