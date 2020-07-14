@@ -2,9 +2,13 @@ Problem(s):
 1. 2Cor 8 10 (with wrap size 20, Dancing.ttf) misses "it."
 
 ToDo:
-1. Have a changeable audio delay with the picture coming up the screen. (by distance) 
+1. Have a changeable audio delay with the picture coming up the screen. (by distance relative to picture height) 
 2. Have text files going up the screen. [#]
 3. Have other animations with text.
 4. Have a block you can bring up to show the input text better, you can remove it.
 
 Have all the filenames in lowercase. (means you can put 'Joel', or 'joel', and both will work).
+
+Trouble shooting:
+1. Q. Stuff not going up the screen..
+1. A. Enter '-go'

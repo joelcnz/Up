@@ -1,21 +1,17 @@
-//#what about remove?
 //#not used yet, for input text opposite of colour here
 public {
 	import std.conv : to;
 	import std.range : enumerate;
 
-	import dsfml.graphics;
-	import dsfml.audio;
-	
-	import jec,
-		   bible.base,
+	import jecsdl,
+		   bible,
 		   jmisc,
 		   dini.dini;
 
-	import setup, upwords, mediacor, media, audio, setfile, backpictureman, backpicture;
+	import fsetup, upwords, mediacor, media, audio, setfile, backpictureman, backpicture;
 }
 
-enum Pict {up, stopped, remove} //#what about remove?
+enum Pict {up, stopped}
 enum Moving {moving, stopped}
 
 alias jx = g_inputJex;
@@ -33,6 +29,8 @@ struct Info {
 Info info;
 
 struct Global {
+	int delay = 50;
+
 	SetFile settings;
 
 	string pictureLot; // picture folder name
@@ -54,7 +52,7 @@ struct Global {
 	string[] fontList;
 	string currentFontFileName;
 	int fontSize;
-	Color verseTxtColour,
+	SDL_Color verseTxtColour,
 		  backGroundColour,
 		  inputColour; //#not used yet, for input text opposite of colour here
 	
@@ -72,7 +70,7 @@ struct Global {
 Global g_global;
 
 struct Message {
-	static int _index;
+//	static int _index;
 	string _fileName;
 	string _text;
 }

@@ -35,18 +35,20 @@ struct SetFile {
 			backPicture._fileName = ini["settings"].getKey("backPicture");
 			fps = ini["settings"].getKey("fps").to!int;
 			pictureLot = ini["settings"].getKey("pictureLot");
+			try { delay = ini["settings"].getKey("delay").to!int; } catch(Exception e) { writeln("delay not found"); }
 
-			with(backPicture)
+			with(backPicture) {
 				load(_fileName);
+			}
 
 			auto colourString = ini["settings"].getKey("verseTxtColour").split.to!(ubyte[]);
-			verseTxtColour = Color(colourString[0], colourString[1], colourString[2]);
+			verseTxtColour = SDL_Color(colourString[0], colourString[1], colourString[2], 0);
 
 			colourString = ini["settings"].getKey("backGroundColour").split.to!(ubyte[]);
-			backGroundColour = Color(colourString[0], colourString[1], colourString[2]);
+			backGroundColour = SDL_Color(colourString[0], colourString[1], colourString[2], 0);
 
 			colourString = ini["settings"].getKey("inputColour").split.to!(ubyte[]);
-			inputColour = Color(colourString[0], colourString[1], colourString[2]);
+			inputColour = SDL_Color(colourString[0], colourString[1], colourString[2], 0);
 		}
 	}
 	
@@ -64,6 +66,7 @@ struct SetFile {
 				writefln(      "pictureUpStep=%s", pictureUpStep);
 				writefln(     "textUpStepSize=%s", textUpStepSize);
 				writefln(         "pictureLot=%s", pictureLot);
+				writefln(              "delay=%s", delay);
 				with(verseTxtColour)
 					writefln("verseTxtColour=%s %s %s", r, g, b);
 				with(backGroundColour)

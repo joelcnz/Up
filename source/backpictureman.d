@@ -6,6 +6,7 @@ class BackPictureMan {
 
 	void add(string name) {
 		_backPics ~= BackPicture();
+		_backPics[$ - 1]._fileName = name;
 		_backPics[$ - 1].load(name);
 	}
 
@@ -14,12 +15,13 @@ class BackPictureMan {
 			throw new Exception("Invalid value");
 
 		_selection = index;
+		g_global.backPicture._fileName = _backPics[_selection]._fileName;
 
 		return _backPics[_selection];
 	}
 
 	void draw() {
-		g_window.draw(_backPics[_selection]._spr);
+		_backPics[_selection].draw;
 	}
 	
 	// a forward range

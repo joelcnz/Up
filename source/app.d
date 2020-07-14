@@ -1,3 +1,7 @@
+//#mouse button
+//#need equivalent (in two places)
+//#do back board later
+//#weirdness
 //#donkey plops!
 //#work point
 //#not working
@@ -29,57 +33,64 @@ import std.path : buildPath, dirSeparator;
 import std.algorithm;
 import std.ascii;
 
-import jec;
 import base;
 
 enum success = 0, failure = -1;
-Color oppositeColour;
+SDL_Color oppositeColour;
 
 struct BackBoard {
 	bool _power;
-	RectangleShape _backBoard;
+	JRectangle _backBoard;
 }
 
 immutable noPower = false;
 
 BackBoard backBoard = {noPower}; //{/* _power */ false};
 
+version(unittest) {
+
+} else
 int main(string[] args) {
-	g_checkPoints = false;
-	gh(0); // check point
-	Setup setup;
-	setup.process;
+	g_checkPoints = true;
+
+//    SCREEN_WIDTH = 640; SCREEN_HEIGHT = 480;
+    //SCREEN_WIDTH = 2560; SCREEN_HEIGHT = 1600;
+	SCREEN_WIDTH = 1280; SCREEN_HEIGHT = 768;
+    if (setup("Poorly Programmed Producions - Presents: Praise Up",
+        SCREEN_WIDTH, SCREEN_HEIGHT,
+        SDL_WINDOW_SHOWN
+        //SDL_WINDOW_OPENGL
+        //SDL_WINDOW_FULLSCREEN_DESKTOP
+        //SDL_WINDOW_FULLSCREEN
+        ) != 0) {
+        writeln("Init failed");
+        return 1;
+    }
+
+	Setup fsetup;
+	fsetup.process;
 	scope(success) {
 		g_global.settings.save();
 	}
 
-	jec.setup;
-	g_mode = Mode.edit;
+    scope(exit)
+        SDL_DestroyRenderer(gRenderer),
+        SDL_Quit();
+
+
+//	g_mode = Mode.edit;
 	g_terminal = true;
 
-	BibleVersion = "English Standard Version";
-	loadXMLFile();
-	parseXMLDocument();
-	gh(2);
-
-	writeln("\nList of possible video modes:");
-	foreach(vid; VideoMode.getFullscreenModes)
-		writeln(vid);
-	writeln();
-
-	version(none)
-		g_window = new RenderWindow(VideoMode.getFullscreenModes[0],
-								    "Welcome to Up! Press [System] + [Q] to quit"d);
-
-    //g_window = new RenderWindow(VideoMode(1280, 800),
-	g_window = new RenderWindow(VideoMode.getDesktopMode,
-							    "Welcome to Up! Press [System] + [Q] to quit"d);
+	//immutable BIBLE_VER = "KJV";
+	immutable BIBLE_VER = "ASV";
+	import std.path : buildPath;
+	loadBible(BIBLE_VER, buildPath("..", "BibleLib", "Versions"));
 		
-	g_window.setFramerateLimit(g_global.fps);
+	g_global.windowWidth = SCREEN_WIDTH;
+	g_global.windowHeight = SCREEN_HEIGHT;
 
-	g_global.windowWidth = g_window.getSize().x; // get screen width
-	g_global.windowHeight = g_window.getSize().y; // get screen height
-
+/+
+//#do back board later
 	backBoard._backBoard = new RectangleShape;
 	with(backBoard._backBoard) {
 		//position = Vector2f(0, 0); //#redundant, I think
@@ -87,7 +98,8 @@ int main(string[] args) {
 			size = Vector2f(windowWidth, windowHeight);
 		fillColor = Color(0,0,0, 255);
 	}
-	
++/	
+/+
 	g_font = new Font;
 	auto fontName = "fonts/DejaVuSans.ttf";
 	int retval = g_font.loadFromFile(fontName);
@@ -104,20 +116,25 @@ int main(string[] args) {
 		/* header */ "-h for help: ",
 		/* Type (oneLine, or history) */ InputType.history);
 	//g_inputJex.setColour(Color.Black);
-	g_inputJex.setColour(g_global.inputColour);
++/
+	const ifontSize = 12;
+	jx = new InputJex(Point(0, SCREEN_HEIGHT - ifontSize - ifontSize), ifontSize, "-h for help>",
+		InputType.history);
 
-	g_global.backPicture.load(g_global.backPicture._fileName);
 
 	Up[] ups;
 	bool moving = true;
 
 	g_global.mediaCor = new MediaCor;
+	scope(exit)
+		g_global.mediaCor.close;
 
 	void loadBackPictures() {
 		g_global.backPictures = new BackPictureMan;
 		string[] backPicList;
+		backPicList.length = 0;
 		writeln("Background Pictures:");
-		foreach(string name; dirEntries("backPictures", "*.{png,jpg}", SpanMode.shallow)) {
+		foreach(string name; dirEntries("backPictures", "*.{png,jpg}", SpanMode.shallow).array.sort!"a < b") {
 			backPicList ~= name;
 			writeln(name);
 			
@@ -130,7 +147,8 @@ int main(string[] args) {
 
 	void loadFontNames() {
 		writeln("Fonts:");
-		foreach(string name; dirEntries("fonts", "*.{ttf}", SpanMode.shallow)) {
+		g_global.fontList.length = 0;
+		foreach(string name; dirEntries("fonts", "*.{ttf}", SpanMode.shallow).array.sort!"a < b") {
 			g_global.fontList ~= name;
 			writeln(name);
 		}
@@ -140,7 +158,8 @@ int main(string[] args) {
 	void loadSettingsFileNames() {
 		writeln("Settings files names:");
 
-		foreach(string name; dirEntries("settingfiles", "*.{ini}", SpanMode.shallow)) {
+		g_global.settingFileNames.length = 0;
+		foreach(string name; dirEntries("settingfiles", "*.{ini}", SpanMode.shallow).array.sort!"a < b") {
 			name = name[name.indexOf(`/`) + 1 .. $ - 4];
 			g_global.settingFileNames ~= name;
 			writeln(name);
@@ -152,7 +171,8 @@ int main(string[] args) {
 		g_global.messages.length = 0;
 		writeln("Messages:");
 		int i;
-		foreach(string name; dirEntries("messages", "*.{txt}", SpanMode.shallow)) {
+		g_global.messages.length = 0;
+		foreach(string name; dirEntries("messages", "*.{txt}", SpanMode.shallow).array.sort!"a < b") {
 			g_global.messages ~= Message(name, readText(name));
 			writeln(name);
 			i += 1;
@@ -163,6 +183,7 @@ int main(string[] args) {
 	void loadLittleNotes() {
 		//#here - add notes
 		writeln("Addsnotes:");
+		g_global.addsLines.length = 0;
 		foreach(line; File("addsnotes.txt").byLine) {
 			g_global.addsLines ~= line.to!string;
 			writeln(line);
@@ -170,33 +191,39 @@ int main(string[] args) {
 		writeln;
 	}
 
-	loadSettingsFileNames;
-	g_global.mediaCor.listMediaLots(g_inputJex, false);
-	g_global.mediaCor.loadMediaLot();
-	loadBackPictures;
-	loadFontNames;
-	loadMessages;
-	loadLittleNotes;
+	void loadUp() {
+		//g_window.setFramerateLimit(g_global.fps); //#need equivalent (in two places)
+		g_inputJex.setColour(g_global.inputColour);
+		g_global.backPicture.load(g_global.backPicture._fileName);
+		loadSettingsFileNames;
+		g_global.mediaCor.listMediaLots(g_inputJex, false);
+		g_global.mediaCor.loadMediaLot();
+		loadBackPictures;
+		loadFontNames;
+		loadMessages;
+		loadLittleNotes;
+	}
+	loadUp;
 
-	while (g_window.isOpen())
-    {
-        Event event;
+	import std.datetime.stopwatch : StopWatch;
 
-        while(g_window.pollEvent(event))
-        {
-            if(event.type == event.EventType.Closed)
-            {
-                g_window.close();
+	StopWatch timer;
+
+    bool done;
+    while(! done) {
+            //Handle events on queue
+            while( SDL_PollEvent( &gEvent ) != 0 ) {
+                //User requests quit
+                if (gEvent.type == SDL_QUIT)
+                    done = true;
             }
-        }
 
-		if ((Keyboard.isKeyPressed(Keyboard.Key.LSystem) || Keyboard.isKeyPressed(Keyboard.Key.RSystem)) &&
-			Keyboard.isKeyPressed(Keyboard.Key.Q)) {
-			g_window.close;
-		}
-		
+		SDL_PumpEvents();
+
 		if (moving) {
 			g_global.mediaCor.process;
+			//import std.parallelism;
+			//ups.parallel.each!"a.process"; //#weirdness
 			ups.each!"a.process";
 			ups = ups.remove!"a.flaggedForDeletion";
 		}
@@ -264,7 +291,8 @@ int main(string[] args) {
 				switch(root) {
 					default: break;
 					case "q", "quit", "exit":
-						g_window.close;
+						//g_window.close;
+						done = true;
 					break;
 					case "h", "h1", "help":
 						foreach(aline; File("help1.txt").byLine)
@@ -279,7 +307,9 @@ int main(string[] args) {
 					break;
 					case "set":
 						selectSet(elms);
-						addToHistory("Restart needed for the changes to take effect..");
+						fsetup.process;
+						loadUp;
+						//addToHistory("Restart needed for the changes to take effect..");
 					break;
 					case "saveSet":
 						try {
@@ -321,7 +351,7 @@ int main(string[] args) {
 						listFonts;
 					break;
 					case "font":
-						selectFont(elms);
+						try { selectFont(elms); } catch(Exception e) { jx.addToHistory("Font failure"d); }
 					break;
 					case "fontSize":
 						setFontSize(elms);
@@ -362,7 +392,7 @@ int main(string[] args) {
 					//#need more work
 					case "message":
 						setMessage(elms, ups);
-						break;
+					break;
 					case "m", "misc":
 						jx.addToHistory("See other terminal"d);
 						jview(g_global.mediaCor);
@@ -400,9 +430,9 @@ int main(string[] args) {
 					case "colour2":
 						if (elms.length == 1 + 3) {
 							try {
-								g_global.verseTxtColour = Color(elms[1].to!ubyte,
+								g_global.verseTxtColour = SDL_Color(elms[1].to!ubyte,
 														elms[2].to!ubyte,
-														elms[3].to!ubyte);
+														elms[3].to!ubyte, 255);
 							} catch(Exception e) {
 								addToHistory("Invalid.");
 							}
@@ -431,8 +461,8 @@ int main(string[] args) {
 							addToHistory(text("Invalid input (", elms[1], ")"));
 							break;
 						}
-						g_window.setFramerateLimit(g_global.fps);
-						addToHistory("Frames per second: " ~ g_global.fps.to!string);
+						//g_window.setFramerateLimit(g_global.fps); //#need equivalent (in two places)
+						addToHistory("*Frames per second: " ~ g_global.fps.to!string);
 						info.fps = g_global.fps.to!string;
 					break;
 					case "info":
@@ -494,25 +524,33 @@ int main(string[] args) {
 			} //else
 			jx.textStr = "";
 			jx.button("");
-			while(Mouse.isButtonPressed(Mouse.Button.Left)) {}
+			//while(Mouse.isButtonPressed(Mouse.Button.Left)) {} //#mouse button
 		}
 
-		g_window.clear(g_global.backGroundColour);
+		with(g_global)
+			SDL_SetRenderDrawColor(gRenderer, backGroundColour.r, 
+				backGroundColour.g, backGroundColour.b, 0xFF);
+		SDL_RenderClear(gRenderer);
 
 		g_global.backPicture.draw;
-
 		g_global.mediaCor.draw;
 
 		foreach(up; ups)
-			if (up.txt.position.y < g_global.windowHeight)
+			if (up.txt.mRect.y < g_global.windowHeight)
 				up.draw;
 
 		if (backBoard._power == true) {
-			g_window.draw(backBoard._backBoard);
+			//g_window.draw(backBoard._backBoard);
+				backBoard._backBoard.draw;
 		}
 		g_inputJex.draw;
 
-        g_window.display;
+		SDL_RenderPresent(gRenderer);
+
+        if (g_global.delay > timer.peek.total!"msecs")
+            SDL_Delay(cast(uint)(g_global.delay - timer.peek.total!"msecs"));
+		timer.reset;
+		timer.start;
     }
 	
 	return 0;
@@ -567,6 +605,21 @@ void selectFont(string[] elms) {
 	}
 }
 
+void setFontSize(string[] elms) {
+	if (elms.length != 2) {
+		writeln("Wrong amout of arguments.");
+	} else {
+		try {
+			g_global.fontSize = elms[1].to!int;
+		} catch(Exception e) {
+			addToHistory(text("Invalid input ", "(", elms[1], ")"));
+			return;
+		}
+		addToHistory(text("Font size: ", g_global.fontSize));
+		info.fontSize = g_global.fontSize.to!string;
+		
+	}
+}
 
 auto getNumSafe(string str) {
 	ubyte selectNum;
@@ -598,7 +651,7 @@ void selectSet(string[] elms) {
 		addToHistory("Invalid data");
 	}
 
-	if (elms.length == 0) {
+	if (elms.length != 2) {
 		error;
 
 		return;
@@ -613,21 +666,6 @@ void selectSet(string[] elms) {
 		error;
 
 		return;
-	}
-}
-
-void setFontSize(string[] elms) {
-	if (elms.length != 2) {
-		writeln("Wrong amout of arguments.");
-	} else {
-		try {
-			g_global.fontSize = elms[1].to!int;
-		} catch(Exception e) {
-			addToHistory(text("Invalid input ", "(", elms[1], ")"));
-			return;
-		}
-		addToHistory(text("Font size: ", g_global.fontSize));
-		info.fontSize = g_global.fontSize.to!string;
 	}
 }
 
@@ -755,20 +793,25 @@ void showSettingsFileNames() {
 //#donkey plops!
 void removeSettingFileName(in int nameToRemoveIndex) {
 	import std.algorithm : remove;
+	import std.file : rhdd = remove;
+	import std.path : buildPath;
 
+	string fileName;
 	try {
 		with(g_global) {
 			string toRemove = settingFileNames[nameToRemoveIndex];
+			fileName = buildPath("settingfiles", toRemove ~ ".ini");
+			rhdd(fileName);
 			settingFileNames = settingFileNames.remove!(f => f == toRemove);
 			addToHistory(toRemove, " has been removed from disk.");
 		}
-	} catch(Exception e) {
-		addToHistory("Some thing went wrong");
+	} catch(FileException e) {
+		addToHistory("File exception: ", fileName);
 	}
 }
 
 //#not working
-auto doColour(ref Color colour, ubyte[3] rgb) {
+auto doColour(ref SDL_Color colour, ubyte[3] rgb) {
 
 	return doColour(colour, format("dummy %s %s %s", rgb[0], rgb[1], rgb[2]).split);
 	//return doColour(colour, format("dummy %s %s %s", rgb[0], rgb[1], rgb[2]).split);
@@ -780,7 +823,7 @@ auto doColour(ref Color colour, ubyte[3] rgb) {
  + 
  + @return - if no exeption thrown
  +/
-auto doColour(ref Color colour, string[] elms) {
+auto doColour(ref SDL_Color colour, string[] elms) {
 	if (elms.length == 1 + 3) {
 		
 		void check(float num) {
@@ -802,10 +845,10 @@ auto doColour(ref Color colour, string[] elms) {
 					return cast(ubyte)(256/100f * data.to!float);
 			}
 			
-			colour = Color(
+			colour = SDL_Color(
 				getConvert(elms[1]),
 				getConvert(elms[2]),
-				getConvert(elms[3]));
+				getConvert(elms[3]), 255);
 			
 			// check to see if the colour is too gray (invisible effect)
 			auto grayAreaCheck(int i) {
@@ -817,14 +860,14 @@ auto doColour(ref Color colour, string[] elms) {
 				grayAreaCheck(2)
 				&&
 				grayAreaCheck(3)) {
-				oppositeColour = Color.White;
+				oppositeColour = SDL_Color(255, 255, 255, 255); //.White;
 				
 			} else {
 				invert = true;
-				oppositeColour = Color(
+				oppositeColour = SDL_Color(
 					getConvert(elms[1]),
 					getConvert(elms[2]),
-					getConvert(elms[3])
+					getConvert(elms[3]), 255
 				);
 			}
 		} catch(Exception e) {

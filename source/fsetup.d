@@ -7,9 +7,9 @@ struct Setup {
 			fontSize = 70;
 			chunkSize = 40;
 			fps = 60;
-			verseTxtColour = Color(255,180,0);
+			verseTxtColour = SDL_Color(255,180,0,0);
 
-			backPicture.load("barry1.png");
+			//backPicture.load("barry1.png");
 
 			// load from HDD
 			import std.path: buildPath;
@@ -18,6 +18,7 @@ struct Setup {
 			// file contence(sp): settingfiles/settings copy
 			settings.setIniFileName(buildPath("settingfiles", readText("settingsSelect.ini")) ~ ".ini");
 			settings.load();
+			gh;
 		}
 	}
 }
