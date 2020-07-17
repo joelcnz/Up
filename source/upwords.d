@@ -77,7 +77,8 @@ public:
 			//pos = Point(mPos.X, mPos.Y - g_global.textUpStepSize);
 			//writeln(pos.X, " ", pos.Y);
 			//if (mRect.y + mRect.h + _font.getLineSpacing(_fontHeight) < 0) {
-			mPos.Y -= g_global.textUpStepSize;
+			//mPos.Y -= g_global.textUpStepSize;
+			pos = Point(pos.X, pos.Y - g_global.textUpStepSize);
 			if (mRect.y + mRect.h + 20 < 0) {
 				_flaggedForDeletion = true;
 			}

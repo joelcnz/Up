@@ -43,7 +43,8 @@ class MediaCor {
 			jx.addToHistory(aline.to!dstring);
 		
 		foreach(i, pic; this.save.enumerate)
-			jx.addToHistory(i.to!dstring ~ ") " ~ pic.name.to!dstring);
+			//jx.addToHistory(i.to!dstring ~ ") " ~ pic.name.to!dstring);
+			jx.addToHistory(i, ") ", pic.name);
 		jx.addToHistory("");
 	}
 
@@ -64,7 +65,7 @@ class MediaCor {
 			if (entry.isDir) {
 				_lots ~= entry.split(dirSeparator)[1];
 				if (toScreen)
-					jx.addToHistory(text(i, ") ", _lots[$ - 1]).to!dstring);
+					jx.addToHistory(i, ") ", _lots[$ - 1]);
 				i += 1;
 			}
 		}
@@ -116,12 +117,12 @@ class MediaCor {
 			auto nm = name.split(dirSeparator)[2]; //media[0]/odds[1]/name[2]
 			import std.string : toStringz;
 			auto surface = IMG_Load(name.toStringz);
+			scope(exit)
+				SDL_FreeSurface(surface);
 			if (surface is null) {
 				import std.conv : to;
 				throw new Exception("Surface '" ~ name ~ "' load failed: " ~ IMG_GetError().to!string );
 			}
-			scope(exit)
-				SDL_FreeSurface(surface);
 			auto texture = SDL_CreateTextureFromSurface( gRenderer, surface );
 			if (! texture)
 				throw new Exception("Texture create failier.");

@@ -56,7 +56,7 @@ int main(string[] args) {
 //    SCREEN_WIDTH = 640; SCREEN_HEIGHT = 480;
     //SCREEN_WIDTH = 2560; SCREEN_HEIGHT = 1600;
 	SCREEN_WIDTH = 1280; SCREEN_HEIGHT = 768;
-    if (setup("Poorly Programmed Producions - Presents: Praise Up",
+    if (setup("Poorly Programmed Producions - Presents: Up",
         SCREEN_WIDTH, SCREEN_HEIGHT,
         SDL_WINDOW_SHOWN
         //SDL_WINDOW_OPENGL
@@ -118,9 +118,8 @@ int main(string[] args) {
 	//g_inputJex.setColour(Color.Black);
 +/
 	const ifontSize = 12;
-	jx = new InputJex(Point(0, SCREEN_HEIGHT - ifontSize - ifontSize), ifontSize, "-h for help>",
+	jx = new InputJex(Point(0, SCREEN_HEIGHT - ifontSize - ifontSize), ifontSize, "-h/-h2 for help>",
 		InputType.history);
-
 
 	Up[] ups;
 	bool moving = true;
@@ -295,25 +294,36 @@ int main(string[] args) {
 						done = true;
 					break;
 					case "h", "h1", "help":
+						{
 						foreach(aline; File("help1.txt").byLine)
 							addToHistory(aline.to!string);
+						}
 					break;
 					case "h2", "help2":
+						{
 						foreach(aline; File("help2.txt").byLine)
 							addToHistory(aline.to!string);
+						}
+					break;
+					case "cld":
+						jx.clearHistory;
 					break;
 					case "sets":
 						showSettingsFileNames;
 					break;
 					case "set":
-						selectSet(elms);
+						try
+							selectSet(elms);
+						catch(Exception e) {
+							addToHistory("Some error choosing settings");
+							break;
+						}
 						fsetup.process;
 						loadUp;
-						//addToHistory("Restart needed for the changes to take effect..");
 					break;
 					case "saveSet":
 						try {
-							g_global.settings.setIniFileName(buildPath("settingfiles", elms[1]) ~ ".ini");
+							g_global.settings.setIniFileName(buildPath("settingfiles", elms[1]).setExtension(".ini"));
 							import std.stdio: File, write;
 
 							File("settingsSelect.ini", "w").write(elms[1]);
@@ -351,7 +361,7 @@ int main(string[] args) {
 						listFonts;
 					break;
 					case "font":
-						try { selectFont(elms); } catch(Exception e) { jx.addToHistory("Font failure"d); }
+						try { selectFont(elms); } catch(Exception e) { jx.addToHistory("Font failure"); }
 					break;
 					case "fontSize":
 						setFontSize(elms);
@@ -473,7 +483,17 @@ int main(string[] args) {
 											bookNum ~ " - book number",
 											picName ~ " - picture",
 											numOfVerses ~ " - number of verses",
-											fps ~ " - frames per second"
+											fps ~ " - frames per second",
+											fontName ~ " - font name",
+											fontSize ~ " - font size",
+											colour ~ " - verse text colour",
+											backColour ~ " - background colour",
+											inputColour ~ " - input colour",
+											pictureLot ~ " - picture lot",
+											wrapSize ~ " - wrap size",
+											settingFile ~ " - setting file name",
+											textUpStepSize ~ " - text up step size",
+											pictureUpStepSize ~ " - picture up step size"
 											])
 								jx.addToHistory(aline.to!dstring);
 					break;
@@ -807,6 +827,7 @@ void removeSettingFileName(in int nameToRemoveIndex) {
 		}
 	} catch(FileException e) {
 		addToHistory("File exception: ", fileName);
+		throw new FileException(text("File exception: ", fileName));
 	}
 }
 

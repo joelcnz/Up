@@ -2,6 +2,7 @@
 public {
 	import std.conv : to;
 	import std.range : enumerate;
+	import std.path : setExtension;
 
 	import jecsdl,
 		   bible,
@@ -23,8 +24,17 @@ struct Info {
 		soundName,
 		numOfVerses,
 		fps,
+		fontName,
 		fontSize,
-		colour;
+		colour,
+		backColour,
+		inputColour,
+		backPicture,
+		pictureLot,
+		wrapSize,
+		settingFile,
+		textUpStepSize,
+		pictureUpStepSize;
 }
 Info info;
 
