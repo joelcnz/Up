@@ -56,7 +56,7 @@ int main(string[] args) {
 //    SCREEN_WIDTH = 640; SCREEN_HEIGHT = 480;
     //SCREEN_WIDTH = 2560; SCREEN_HEIGHT = 1600;
 	SCREEN_WIDTH = 1280; SCREEN_HEIGHT = 768;
-    if (setup("Poorly Programmed Producions - Presents: Up",
+    if (jecsdlsetup("Poorly Programmed Productions - Presents: Up",
         SCREEN_WIDTH, SCREEN_HEIGHT,
         SDL_WINDOW_SHOWN
         //SDL_WINDOW_OPENGL
@@ -159,7 +159,7 @@ int main(string[] args) {
 
 		g_global.settingFileNames.length = 0;
 		foreach(string name; dirEntries("settingfiles", "*.{ini}", SpanMode.shallow).array.sort!"a < b") {
-			name = name[name.indexOf(`/`) + 1 .. $ - 4];
+			name = stripExtension(name[name.indexOf(`/`) + 1 .. $]);
 			g_global.settingFileNames ~= name;
 			writeln(name);
 		}
@@ -441,8 +441,8 @@ int main(string[] args) {
 						if (elms.length == 1 + 3) {
 							try {
 								g_global.verseTxtColour = SDL_Color(elms[1].to!ubyte,
-														elms[2].to!ubyte,
-														elms[3].to!ubyte, 255);
+															elms[2].to!ubyte,
+															elms[3].to!ubyte, 255);
 							} catch(Exception e) {
 								addToHistory("Invalid.");
 							}
@@ -475,6 +475,21 @@ int main(string[] args) {
 						addToHistory("*Frames per second: " ~ g_global.fps.to!string);
 						info.fps = g_global.fps.to!string;
 					break;
+					case "delay":
+						if (elms.length == 1) {
+							addToHistory("Not right!");
+							break;
+						}
+						try {
+							g_global.delay = elms[1].to!int;
+						} catch(Exception e) {
+							addToHistory(text("Invalid input (", elms[1], ")"));
+							break;
+						}
+						//g_window.setFramerateLimit(g_global.fps); //#need equivalent (in two places)
+						addToHistory("delay: ", g_global.delay);
+						info.delay = g_global.delay.to!string;
+					break;
 					case "info":
 						with(info)
 							foreach(aline; ["",
@@ -483,7 +498,8 @@ int main(string[] args) {
 											bookNum ~ " - book number",
 											picName ~ " - picture",
 											numOfVerses ~ " - number of verses",
-											fps ~ " - frames per second",
+											"*" ~ fps ~ " - frames per second",
+											delay ~ " - display delay in milliseconds",
 											fontName ~ " - font name",
 											fontSize ~ " - font size",
 											colour ~ " - verse text colour",
@@ -526,7 +542,7 @@ int main(string[] args) {
 							jx.addToHistory("References:");
 							string aline;
 							foreach(refe; verses) {
-								aline ~= format("%-40s", refe);
+								aline ~= format!"%-40s"(refe);
 								a++;
 								if (a == 7) {
 									addToHistory(aline);
@@ -619,7 +635,7 @@ void selectFont(string[] elms) {
 	}
 	if (selectNum < g_global.fontList.length) {
 		g_global.currentFontFileName = g_global.fontList[selectNum];
-		addToHistory(format("%s font selected", g_global.currentFontFileName));
+		addToHistory(format!"%s font selected"(g_global.currentFontFileName));
 	} else {
 		addToHistory("Invalid data");
 	}
@@ -681,7 +697,7 @@ void selectSet(string[] elms) {
 		import std.path: buildPath;
 
 		File("settingsSelect.ini", "w").write(g_global.settingFileNames[selectNum]);
-		addToHistory(format("%s - settings file selected", g_global.settingFileNames[selectNum]));
+		addToHistory(format!"%s - settings file selected"(g_global.settingFileNames[selectNum]));
 	} else {
 		error;
 
@@ -693,8 +709,8 @@ void listBackPictures() {
 	foreach(line; ["",
 			"Back ground pictures list:"])
 		addToHistory(line);
-	foreach(i, back; g_global.backPictures.save.enumerate)
-		addToHistory(text(i, ") ", back._fileName));
+	foreach(i; 0 .. g_global.backPictures._backPics.length)
+		addToHistory(text(i, ") ", g_global.backPictures.getNameByIndex(i)));
 }
 
 void wrongNumberOfOperants() {
@@ -834,13 +850,13 @@ void removeSettingFileName(in int nameToRemoveIndex) {
 //#not working
 auto doColour(ref SDL_Color colour, ubyte[3] rgb) {
 
-	return doColour(colour, format("dummy %s %s %s", rgb[0], rgb[1], rgb[2]).split);
+	return doColour(colour, format!"dummy %s %s %s"(rgb[0], rgb[1], rgb[2]).split);
 	//return doColour(colour, format("dummy %s %s %s", rgb[0], rgb[1], rgb[2]).split);
 }
 
 /++
  + @para - ref Colour (
- + @para - elements
+ + @para - elements - eg. ["100", "80", "0"]
  + 
  + @return - if no exeption thrown
  +/

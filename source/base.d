@@ -24,6 +24,7 @@ struct Info {
 		soundName,
 		numOfVerses,
 		fps,
+		delay,
 		fontName,
 		fontSize,
 		colour,

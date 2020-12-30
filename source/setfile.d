@@ -1,3 +1,5 @@
+// settings file
+
 //#I've opened a issue for the guy that does the dini library. He has said it was tricky and closed the issue
 // setExtention should be used for the ".txt"'s
 import std.stdio: File, readln, writeln;
@@ -79,21 +81,21 @@ struct SetFile {
 			auto _file = File(iniFileName, "w");
 			with(_file) {
 				writeln("[settings]");
-				writefln("currentFontFileName=%s", currentFontFileName);
-				writefln(           "fontSize=%s", fontSize);
-				writefln(          "chunkSize=%s", chunkSize);
-				writefln(                "fps=%s", fps);
-				writefln(        "backPicture=%s", backPicture._fileName);
-				writefln(      "pictureUpStep=%s", pictureUpStep);
-				writefln(     "textUpStepSize=%s", textUpStepSize);
-				writefln(         "pictureLot=%s", pictureLot);
-				writefln(              "delay=%s", delay);
+				writefln!"currentFontFileName=%s"(currentFontFileName);
+				writefln!           "fontSize=%s"(fontSize);
+				writefln!          "chunkSize=%s"(chunkSize);
+				writefln!                "fps=%s"(fps);
+				writefln!        "backPicture=%s"(backPicture._fileName);
+				writefln!      "pictureUpStep=%s"(pictureUpStep);
+				writefln!     "textUpStepSize=%s"(textUpStepSize);
+				writefln!         "pictureLot=%s"(pictureLot);
+				writefln!              "delay=%s"(delay);
 				with(verseTxtColour)
-					writefln("verseTxtColour=%s %s %s", r, g, b);
+					writefln!"verseTxtColour=%s %s %s"(r, g, b);
 				with(backGroundColour)
-					writefln("backGroundColour=%s %s %s", r, g, b);
+					writefln!"backGroundColour=%s %s %s"(r, g, b);
 				with(inputColour)
-					writefln("inputColour=%s %s %s", r, g, b);
+					writefln!"inputColour=%s %s %s"(r, g, b);
 
 			}
 		}

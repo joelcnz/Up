@@ -40,10 +40,9 @@ class MediaCor {
 	void listMediaFiles(InputJex jx) {
 		foreach(aline; ["",
 				"List of picture names:"])
-			jx.addToHistory(aline.to!dstring);
+			jx.addToHistory(aline);
 		
 		foreach(i, pic; this.save.enumerate)
-			//jx.addToHistory(i.to!dstring ~ ") " ~ pic.name.to!dstring);
 			jx.addToHistory(i, ") ", pic.name);
 		jx.addToHistory("");
 	}
@@ -58,8 +57,8 @@ class MediaCor {
 
 		_lots.length = 0;
 		if (toScreen)
-			jx.addToHistory(""d),
-			jx.addToHistory("Up pictures lots list: (to do)"d);
+			jx.addToHistory(""),
+			jx.addToHistory("Up pictures lots list: (to do)");
 		int i;
 		foreach(string entry; dirEntries("media", "*", SpanMode.shallow).array.sort!"a < b") {
 			if (entry.isDir) {
@@ -102,7 +101,7 @@ class MediaCor {
 
 		_mediaLst.length = 0;
 		string[] picList;
-		foreach(string name; dirEntries(buildPath("media", g_global.pictureLot), "*.{png,jpg}", SpanMode.shallow)
+		foreach(string name; dirEntries(buildPath("media", g_global.pictureLot), "*.{png,jpg,jpeg,bmp}", SpanMode.shallow)
 																								.array.sort!"a < b") {
 			picList ~= name;
 			if (! toScreen)
@@ -121,7 +120,7 @@ class MediaCor {
 				SDL_FreeSurface(surface);
 			if (surface is null) {
 				import std.conv : to;
-				throw new Exception("Surface '" ~ name ~ "' load failed: " ~ IMG_GetError().to!string );
+				throw new Exception("Surface '" ~ name ~ "' load failed: " ~ IMG_GetError().fromStringz.to!string );
 			}
 			auto texture = SDL_CreateTextureFromSurface( gRenderer, surface );
 			if (! texture)
@@ -139,9 +138,9 @@ class MediaCor {
 					if (! audio.mSnd)
 						jx.addToHistory(nameWithOutExt ~ ext, " - found, but failed to load.");
 				}
-			add(nm[0 .. $ - 4], new Media(nm, texture, rect, audio));
+			add(nm.stripExtension, new Media(nm, texture, rect, audio));
 			if (toScreen) {
-				jx.addToHistory(nm.until(".").to!dstring);
+				jx.addToHistory(nm.until("."));
 //#not sure
 				SDL_SetRenderDrawColor(gRenderer, 0x00, 0x00, 0x00, 0x00);
 				SDL_RenderClear(gRenderer);

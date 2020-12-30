@@ -1,22 +1,25 @@
 {
-    "name": "up",
-    "targetType": "executable",
-    "sourcePaths" : ["source",
-                     "../BibleLib/source",
-                     "../JecsdlLib/source",
-                     "../JMiscLib/source",
-                     "../IniLib/source"],
-    "importPaths" : ["source",
-                    "../BibleLib/source",
-                    "../JecsdlLib/source",
-                    "../JMiscLib/source",
-                    "../IniLib/source"],
-       "dependencies":
-    {
+	"dependencies": {
+		"arsd-official:dom": "~>8.3.1",
 		"bindbc-sdl": "~>0.13.0",
-		"onyx-config": "~>2.0.11",
-        "arsd-official:dom": "~>4.0.1"
-    },
+		"onyx-config": "~>2.0.11"
+	},
+	"importPaths": [
+		"source",
+		"../BibleLib/source",
+		"../JecsdlLib/source",
+		"../JMiscLib/source",
+		"../IniLib/source"
+	],
+	"name": "up",
+	"sourcePaths": [
+		"source",
+		"../BibleLib/source",
+		"../JecsdlLib/source",
+		"../JMiscLib/source",
+		"../IniLib/source"
+	],
+	"targetType": "executable",
 	"versions": [
 		"SDL_2010",
 		"BindSDL_Image",

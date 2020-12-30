@@ -1,4 +1,3 @@
-//#Not used I don't think
 import base;
 
 struct BackPicture {
@@ -6,16 +5,21 @@ struct BackPicture {
 	SDL_Rect _pos;
 	SDL_Texture* _spr;
 
-	//#Not used I don't think
-	void close() {
-		SDL_DestroyTexture(_spr);
+	~this() {
+		close;
+	}
+
+	void  close() {
+		if (_spr !is null)
+			SDL_DestroyTexture(_spr);
 	}
 
 	void load(string fileName0) {
 		if (_spr !is null)
 			close;
 		if (fileName0 == "") {
-			return;
+			import jmisc;
+			mixin(jecho("return;"));
 		}
 
 		import std.path : buildPath;
