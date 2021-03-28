@@ -30,7 +30,7 @@ class MediaCor {
 				foreach(med; this.save)
 					if (med.name == name && med.sound.mSnd)
 						med.sound.play;
-				jx.addToHistory(name.to!dstring ~ " - media loaded");
+				jx.addToHistory(name ~ " - media loaded");
 			} else {
 				jx.addToHistory("Some error!");
 			}

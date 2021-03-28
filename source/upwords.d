@@ -36,7 +36,7 @@ public:
 		//const fontSize = 25;
 		//assert(jtextMakeFont(g_global.currentFontFileName, fontSize), "error making font");
 		//mixin(trace("pos.Xi", "pos.Yi"));
-		mTxt = JText(txt, SDL_Rect(/* dummy */ 0,pos.Yi, 1,1), SDL_Color(0,0,0,0),
+		mTxt = JText(txt, SDL_Point(/* dummy */ 0,pos.Yi), SDL_Color(0,0,0,0),
 			g_global.fontSize, g_global.currentFontFileName);
 
 //		_font.loadFromFile(g_global.currentFontFileName);
@@ -63,7 +63,7 @@ public:
 	void loadFont(in string fileName) {
 //this(string message, SDL_Rect r, SDL_Color col = SDL_Color(255,180,0,0xFF), int fontSize = 15,
 //        string fileName = "DejaVuSans.ttf") {
-		mTxt = JText("", SDL_Rect(0,0,0,0), SDL_Color(0,0,0,0), 15, fileName);
+		mTxt = JText("", SDL_Point(), SDL_Color(0,0,0,0), 15, fileName);
 		//if (! font.loadFromFile(fileName)) {
 		//	import std.conv : text;
 		//	throw new Exception(text("Font fail - ", fileName));

@@ -22,7 +22,7 @@ public:
 		void rect(SDL_Rect r) { mSpr.mRect = r; }
 		auto rect() { return mSpr.mRect; }
 
-		JSound sound() { return _sound; }
+		ref JSound sound() { return _sound; }
 
 		Pict picCase() { return _picCase; }
 		void picCase(in Pict picCase0) { _picCase = picCase0; }
@@ -50,6 +50,7 @@ public:
 								(g_global.windowHeight - _spr.getGlobalBounds().height) / 2);
 +/
 		_sound = sound;
+		// mixin(tce("_sound.mSnd sound.mSnd".split));
 	}
 	
 	void process() {

@@ -285,7 +285,7 @@ int main(string[] args) {
 				int a;
 				elms = line.to!string.split;
 				root = elms[0].findSplit("-")[2];
-				debug mixin(trace("elms", "root"));
+				debug mixin(tce("elms", "root"));
 				
 				switch(root) {
 					default: break;
